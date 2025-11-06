@@ -1,0 +1,941 @@
+[
+  {
+    "name": "Joy Hits",
+    "country": "USA",
+    "stream_url": "http://stream.joyhits.online:8070/joyhits.aac",
+    "description": "Fresh music only, all day without interruption, playing top hits",
+    "city": "Los Angeles",
+    "genre": "Top 40 & Pop",
+    "language": "English",
+    "website": "http://joyhits.online/",
+    "image_url": "http://radio.pervii.com/im/5/1574060845.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "pop",
+      "hits",
+      "top 40",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 1
+  },
+  {
+    "name": "2000 FM - Top 40",
+    "country": "USA",
+    "stream_url": "http://bigrradio.cdnstream1.com/5106_128",
+    "description": "Top 40 hits from Bothell, Washington",
+    "city": "Bothell",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "https://2000fm.net/",
+    "image_url": "http://radio.pervii.com/im/8/1537613178.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "pop",
+      "hits",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 2
+  },
+  {
+    "name": "GotRadio - Top 40",
+    "country": "USA",
+    "stream_url": "http://gr02.cdnstream.com:8270",
+    "description": "The freshest blend of today's top hits",
+    "city": "Anelope",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "http://www.gotradio.com/",
+    "image_url": "http://radio.pervii.com/im/5/1552224195.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "pop",
+      "urban",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 5
+  },
+  {
+    "name": "ElectricFM.com - America's Real Dance!",
+    "country": "USA",
+    "stream_url": "https://live.electricfm.com/electricfm",
+    "description": "Online dance radio station playing today's dance hits, EDM, and club music",
+    "city": "New York",
+    "genre": "Dance",
+    "language": "English",
+    "website": "https://www.electricfm.com/",
+    "image_url": "http://radio.pervii.com/logo/106414.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "dance",
+      "edm",
+      "club",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 6
+  },
+  {
+    "name": "100Hitz - Top 40",
+    "country": "USA",
+    "stream_url": "http://gr02.cdnstream.com:9090",
+    "description": "The best in online radio and streaming audio music entertainment with top 40 hits",
+    "city": "Antelope",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "https://100hitz.com/",
+    "image_url": "http://radio.pervii.com/im/1/1549706701.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "hits",
+      "pop",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 7
+  },
+  {
+    "name": "1.FM - Absolute TOP 40 Radio",
+    "country": "USA",
+    "stream_url": "http://strm112.1.fm/top40_64?=1",
+    "description": "The songs you know, the artists you love, top of the charts",
+    "city": "Miami",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "https://www.1.fm/station/top40",
+    "image_url": "http://radio.pervii.com/logo/1426449734.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "pop",
+      "rock",
+      "dance"
+    ],
+    "is_ai_generated": false,
+    "id": 8
+  },
+  {
+    "name": "Powerhitz.com - The Hitlist",
+    "country": "USA",
+    "stream_url": "http://108.61.30.179:7000",
+    "description": "The leader for internet-based radio, playing all hit music",
+    "city": "New York",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "http://powerhitz.com/",
+    "image_url": "http://radio.pervii.com/logo/1403507203.png",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "hits",
+      "pop",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 9
+  },
+  {
+    "name": "RadioMaxMusic - Greatest Hits",
+    "country": "USA",
+    "stream_url": "http://192.99.83.154:8006/stream/1/",
+    "description": "The best music from the 70s to today with original programming and classic countdowns",
+    "city": "New York",
+    "genre": "Classic Hits",
+    "language": "English",
+    "website": "https://www.radiomaxmusic.com/",
+    "image_url": "http://radio.pervii.com/im/6/1550334486.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "classic hits",
+      "70s",
+      "80s",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 12
+  },
+  {
+    "name": "Nexus Radio",
+    "country": "USA",
+    "stream_url": "http://stream1.nexusradio.fm/nexuspop.aac",
+    "description": "Internet dance radio station specializing in dance music and pop remixes",
+    "city": "Chicago",
+    "genre": "Dance",
+    "language": "English",
+    "website": "https://nexus.radio/",
+    "image_url": "http://radio.pervii.com/im/6/1554738916.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "dance",
+      "pop",
+      "remixes",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 14
+  },
+  {
+    "name": "70's Classics",
+    "country": "USA",
+    "stream_url": "http://192.111.140.11:8008/stream/1/",
+    "description": "Classic hits from the 1970s",
+    "city": "San Francisco",
+    "genre": "70s",
+    "language": "English",
+    "website": "https://www.sf70s.com/",
+    "image_url": "http://radio.pervii.com/logo/255489.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "70s",
+      "classic rock",
+      "pop",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 15
+  },
+  {
+    "name": "AudioVision: Hits 94 - All The Hits!",
+    "country": "USA",
+    "stream_url": "http://los.cdnstream.com/hits94128k",
+    "description": "All the hits from AudioVision",
+    "city": "Los Angeles",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "",
+    "image_url": "http://radio.pervii.com/im/1/1561464591.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "hits",
+      "pop",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 16
+  },
+  {
+    "name": "AudioVision: Absolute Mix Radio - Today's Best Music",
+    "country": "USA",
+    "stream_url": "http://los.cdnstream.com/absolutemix128k",
+    "description": "Today's best music mix from AudioVision",
+    "city": "Los Angeles",
+    "genre": "Adult Hits",
+    "language": "English",
+    "website": "http://absolutemixradio.com/",
+    "image_url": "http://radio.pervii.com/im/6/1550594376.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "adult hits",
+      "pop",
+      "mix",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 22
+  },
+  {
+    "name": "Best Net Radio - Poppin Top 40",
+    "country": "USA",
+    "stream_url": "http://bigrradio-edge1.cdnstream.com/5163_128",
+    "description": "Poppin' top 40 hits from Best Net Radio",
+    "city": "Miami",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "http://www.bestnetradio.com/",
+    "image_url": "http://radio.pervii.com/logo/1403862944.png",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "pop",
+      "hits",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 25
+  },
+  {
+    "name": "WQNZ",
+    "country": "USA",
+    "stream_url": "http://crystalout.surfernetwork.com:8001/WQNZ_MP3?",
+    "description": "Local radio station playing various hits",
+    "city": "Natchez",
+    "genre": "Various",
+    "language": "English",
+    "website": "http://www.95country.com/",
+    "image_url": "http://radio.pervii.com/logo/79528.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "various",
+      "local",
+      "hits",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 27
+  },
+  {
+    "name": "POWERHITZ.COM - THE HITLIST - #1 FOR ALL HIT MUSIC",
+    "country": "USA",
+    "stream_url": "http://66.85.88.174:80/hitlist",
+    "description": "#1 for all hit music, top 40 and more",
+    "city": "New York",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "http://powerhitz.com/",
+    "image_url": "http://radio.pervii.com/logo/1403507203.png",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "hits",
+      "pop",
+      "internet"
+    ],
+    "is_ai_generated": false,
+    "id": 29
+  },
+  {
+    "name": "Smooth Jazz Florida Worldwide",
+    "country": "USA",
+    "stream_url": "http://144.217.158.59:5120/stream/1/",
+    "description": "Broadcasting 24/7 from Sunny South Florida with a 128 Kbps Hi Def CD quality Smooth Jazz Stream",
+    "city": "Miami",
+    "genre": "Smooth Jazz",
+    "language": "English",
+    "website": "https://smoothjazzflorida.com/",
+    "image_url": "http://radio.pervii.com/im/0/1562988670.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "smooth jazz",
+      "contemporary jazz",
+      "relaxing",
+      "instrumental"
+    ],
+    "is_ai_generated": false,
+    "id": 30
+  },
+  {
+    "name": "Radio BIR",
+    "country": "Bosnia and Herzegovina",
+    "stream_url": "http://188.40.62.20:8090/stream/1/",
+    "description": "Radio of the Islamic Community in Bosnia and Herzegovina providing educational, informative, and religious content",
+    "city": "Sarajevo",
+    "genre": "Religious & Talk",
+    "language": "Bosnian",
+    "website": "https://www.bir.ba/",
+    "image_url": "http://radio.pervii.com/im/0/1537527360.jpg",
+    "frequency": "96.5 FM",
+    "tags": [
+      "religious",
+      "islamic",
+      "news",
+      "bosnia"
+    ],
+    "is_ai_generated": false,
+    "id": 31
+  },
+  {
+    "name": "Praiseworld Radio",
+    "country": "Nigeria",
+    "stream_url": "http://streaming.radio.co/s7dc18f0ad/listen",
+    "description": "Africa's #1 Online Gospel Radio Station broadcasting urban and gospel hip hop music",
+    "city": "Lagos",
+    "genre": "Gospel",
+    "language": "English",
+    "website": "https://www.praiseworldradio.com/",
+    "image_url": "http://radio.pervii.com/im/8/1550029858.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "gospel",
+      "christian",
+      "hip hop",
+      "african"
+    ],
+    "is_ai_generated": false,
+    "id": 32
+  },
+  {
+    "name": "TORi - TeluguOne Radio",
+    "country": "USA",
+    "stream_url": "http://173.203.133.187:9700/stream/1/",
+    "description": "First Global Telugu Radio on Internet with 24/7 live shows, interviews, and community participation",
+    "city": "Atlanta",
+    "genre": "Talk & Variety",
+    "language": "Telugu",
+    "website": "https://www.teluguoneradio.com/",
+    "image_url": "http://radio.pervii.com/logo/100941.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "telugu",
+      "indian",
+      "talk",
+      "community"
+    ],
+    "is_ai_generated": false,
+    "id": 33
+  },
+  {
+    "name": "Sankofa Radio",
+    "country": "USA",
+    "stream_url": "http://s2.nexuscast.com:8068/stream/1/",
+    "description": "US-based community radio station providing diverse African music, educative talk shows, and entertainment",
+    "city": "Woodbridge",
+    "genre": "African",
+    "language": "English",
+    "website": "https://sankofaradio.com/",
+    "image_url": "http://radio.pervii.com/im/4/1549709654.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "african",
+      "world",
+      "talk",
+      "music"
+    ],
+    "is_ai_generated": false,
+    "id": 34
+  },
+  {
+    "name": "Radio PDM",
+    "country": "Germany",
+    "stream_url": "http://radio-pdm.stream.laut.fm/radio-pdm",
+    "description": "The best music mix from over 40 years",
+    "city": "Karlsruhe",
+    "genre": "Pop",
+    "language": "German",
+    "website": "https://laut.fm/radio-pdm",
+    "image_url": "http://radio.pervii.com/logo/1403554005.png",
+    "frequency": "Internet",
+    "tags": [
+      "pop",
+      "hits",
+      "retro",
+      "german"
+    ],
+    "is_ai_generated": false,
+    "id": 35
+  },
+  {
+    "name": "247 Polka Heaven",
+    "country": "USA",
+    "stream_url": "http://192.99.83.149:8046",
+    "description": "The World's Polka Network featuring over 40 shows weekly from across the USA",
+    "city": "Chicago",
+    "genre": "Polka",
+    "language": "English",
+    "website": "https://247polkaheaven.com/",
+    "image_url": "http://radio.pervii.com/im/8/1551546028.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "polka",
+      "folk",
+      "dance",
+      "traditional"
+    ],
+    "is_ai_generated": false,
+    "id": 36
+  },
+  {
+    "name": "Radio Gbg Folk",
+    "country": "Sweden",
+    "stream_url": "http://62.210.188.38:8050/stream/2/",
+    "description": "Narodna muzika 24 hours a day from Gothenburg",
+    "city": "Gothenburg",
+    "genre": "Folk",
+    "language": "Bosnian",
+    "website": "https://www.radiogbg.se/audio/webplayerfolk/index.html",
+    "image_url": "http://radio.pervii.com/im/1/1572768561.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "folk",
+      "nacionalna",
+      "bosnian",
+      "swedish"
+    ],
+    "is_ai_generated": false,
+    "id": 37
+  },
+  {
+    "name": "Tarana",
+    "country": "New Zealand",
+    "stream_url": "https://peridot.streamguys1.com:7150/Tarana.aac",
+    "description": "New Zealand's leading Indian broadcaster with non-stop music, news, and interaction",
+    "city": "Auckland",
+    "genre": "Indian",
+    "language": "Hindi",
+    "website": "https://www.tarana.co.nz/",
+    "image_url": "http://radio.pervii.com/im/1/1572768561.jpg",
+    "frequency": "1386 AM",
+    "tags": [
+      "indian",
+      "hindi",
+      "bollywood",
+      "nz"
+    ],
+    "is_ai_generated": false,
+    "id": 38
+  },
+  {
+    "name": "Ska World Radio",
+    "country": "Germany",
+    "stream_url": "http://skaworld.stream.laut.fm/skaworld",
+    "description": "Ska music 24 hours a day with all three waves, reggae, and rock",
+    "city": "Berlin",
+    "genre": "Ska",
+    "language": "English",
+    "website": "https://laut.fm/skaworld",
+    "image_url": "http://radio.pervii.com/logo/1403554005.png",
+    "frequency": "Internet",
+    "tags": [
+      "ska",
+      "reggae",
+      "punk",
+      "german"
+    ],
+    "is_ai_generated": false,
+    "id": 39
+  },
+  {
+    "name": "Sirelazik",
+    "country": "France",
+    "stream_url": "http://streamingp.shoutcast.com/JamendoLounge?lang=*",
+    "description": "Webradio discovering the world through music with eclectic programming and sound postcards",
+    "city": "Paris",
+    "genre": "World",
+    "language": "French",
+    "website": "https://www.radio.fr/s/sirelazik",
+    "image_url": "http://radio.pervii.com/im/8/1550041808.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "world",
+      "eclectic",
+      "jazz",
+      "latin"
+    ],
+    "is_ai_generated": false,
+    "id": 40
+  },
+  {
+    "name": "Radio Aurora Armenia",
+    "country": "Armenia",
+    "stream_url": "http://138.201.84.106:8050/stream/1/",
+    "description": "Visual Radio N1 in Armenia with contemporary music, news, and cultural programs",
+    "city": "Yerevan",
+    "genre": "Pop",
+    "language": "Armenian",
+    "website": "https://www.radioaurora.am/",
+    "image_url": "http://radio.pervii.com/im/1/1576144531.jpg",
+    "frequency": "100.7 FM",
+    "tags": [
+      "pop",
+      "armenian",
+      "news",
+      "culture"
+    ],
+    "is_ai_generated": false,
+    "id": 41
+  },
+  {
+    "name": "Diva FM",
+    "country": "Greece",
+    "stream_url": "http://176.31.120.166:6404/stream/1/",
+    "description": "Euro hits, hot AC, and electronic dance music from northern Greece",
+    "city": "Kozani",
+    "genre": "Dance",
+    "language": "Greek",
+    "website": "https://www.divafm.gr/",
+    "image_url": "http://radio.pervii.com/logo/70938.jpg",
+    "frequency": "91.6 FM",
+    "tags": [
+      "dance",
+      "electronic",
+      "euro hits",
+      "greek"
+    ],
+    "is_ai_generated": false,
+    "id": 42
+  },
+  {
+    "name": "Gdynia Radio",
+    "country": "Poland",
+    "stream_url": "http://51.255.8.139:8064/stream/1/",
+    "description": "Tri-city online radio with eclectic music from Latin, Brazilian, jazz, tango, swing, blues, reggae, and more",
+    "city": "Gdynia",
+    "genre": "Eclectic",
+    "language": "Polish",
+    "website": "https://gdyniaradio.com/",
+    "image_url": "http://radio.pervii.com/im/9/1572709309.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "eclectic",
+      "latin",
+      "jazz",
+      "world"
+    ],
+    "is_ai_generated": false,
+    "id": 43
+  },
+  {
+    "name": "Maxima 100.9 FM",
+    "country": "Mexico",
+    "stream_url": "http://omegaingenieria.com:8034/stream/1/",
+    "description": "Metropolitan entertainment radio with music and informative spaces",
+    "city": "Morelia",
+    "genre": "Pop",
+    "language": "Spanish",
+    "website": "https://maximafm.com.mx/",
+    "image_url": "http://radio.pervii.com/im/0/1550072240.jpg",
+    "frequency": "100.9 FM",
+    "tags": [
+      "pop",
+      "mexican",
+      "entertainment",
+      "news"
+    ],
+    "is_ai_generated": false,
+    "id": 44
+  },
+  {
+    "name": "bigFM Worldbeats",
+    "country": "Germany",
+    "stream_url": "http://audiotainment-sw.streamabc.net/atsw-worldbeats-mp3-128-8690292",
+    "description": "Ultimate mix of electro, hip-hop, R&B, and traditional music from Turkey, Balkans, Russia, and Orient",
+    "city": "Stuttgart",
+    "genre": "World",
+    "language": "German",
+    "website": "https://www.bigfm.de/webradio/world-beats",
+    "image_url": "http://radio.pervii.com/logo/94123.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "world",
+      "balkan",
+      "turkish",
+      "dance"
+    ],
+    "is_ai_generated": false,
+    "id": 45
+  },
+  {
+    "name": "talkSPORT 2",
+    "country": "UK",
+    "stream_url": "http://radio.talksport.com/stream2",
+    "description": "The real home of live sport with coverage of rugby, cricket, tennis, golf, and more",
+    "city": "London",
+    "genre": "Sports",
+    "language": "English",
+    "website": "https://talksport.com/",
+    "image_url": "http://radio.pervii.com/im/3/1563164463.jpg",
+    "frequency": "DAB",
+    "tags": [
+      "sports",
+      "talk",
+      "football",
+      "cricket"
+    ],
+    "is_ai_generated": false,
+    "id": 46
+  },
+  {
+    "name": "LolliRadio Dance",
+    "country": "Italy",
+    "stream_url": "http://stream.lolliradio.net/lolli_dance.mp3",
+    "description": "Explosive music without genre restrictions: dance, house, and exclusive pop remixes",
+    "city": "Rome",
+    "genre": "Dance",
+    "language": "Italian",
+    "website": "https://www.lolliradio.net/dance/",
+    "image_url": "http://radio.pervii.com/im/4/1537444514.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "dance",
+      "house",
+      "remix",
+      "italian"
+    ],
+    "is_ai_generated": false,
+    "id": 47
+  },
+  {
+    "name": "TORi-Live",
+    "country": "USA",
+    "stream_url": "http://173.203.133.187:9156",
+    "description": "Global Telugu radio with live community shows and interviews",
+    "city": "Atlanta",
+    "genre": "Talk",
+    "language": "Telugu",
+    "website": "https://www.teluguoneradio.com/",
+    "image_url": "http://radio.pervii.com/logo/100941.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "telugu",
+      "live",
+      "talk",
+      "indian"
+    ],
+    "is_ai_generated": false,
+    "id": 48
+  },
+  {
+    "name": "Clapas",
+    "country": "France",
+    "stream_url": "https://stations.radioclapas.fr/radio/8130/radio.mp3",
+    "description": "Regional community radio with dominant jazz, world music, and French-speaking songs",
+    "city": "Montpellier",
+    "genre": "Jazz",
+    "language": "French",
+    "website": "https://www.radioclapas.fr/",
+    "frequency": "93.5 FM",
+    "tags": [
+      "jazz",
+      "world",
+      "community",
+      "french"
+    ],
+    "is_ai_generated": false,
+    "id": 49
+  },
+  {
+    "name": "TORi-Live-8000",
+    "country": "USA",
+    "stream_url": "http://173.203.133.187:9700/stream",
+    "description": "Alternative stream for TeluguOne's global radio with live programming",
+    "city": "Atlanta",
+    "genre": "Talk",
+    "language": "Telugu",
+    "website": "https://www.teluguoneradio.com/",
+    "image_url": "http://radio.pervii.com/logo/100941.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "telugu",
+      "live",
+      "stream",
+      "indian"
+    ],
+    "is_ai_generated": false,
+    "id": 50
+  },
+  {
+    "name": "SomaFM - Suburbs of Goa",
+    "country": "USA",
+    "stream_url": "http://ice1.somafm.com/suburbsofgoa-128-mp3",
+    "description": "Desi-influenced Asian world beats and beyond, commercial-free listener-supported radio",
+    "city": "San Francisco",
+    "genre": "World",
+    "language": "English",
+    "website": "https://somafm.com/suburbsofgoa/",
+    "image_url": "http://radio.pervii.com/im/2/1552392752.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "world",
+      "asian",
+      "ambient",
+      "fusion"
+    ],
+    "is_ai_generated": false,
+    "id": 51
+  },
+  {
+    "name": "QOSMOS",
+    "country": "Germany",
+    "stream_url": "http://qosmos.stream.laut.fm/qosmos",
+    "description": "Theoretical conspiracies, survival tips, and quirky thoughts on world questions",
+    "city": "Berlin",
+    "genre": "Talk",
+    "language": "German",
+    "website": "https://laut.fm/qosmos",
+    "image_url": "http://radio.pervii.com/logo/1403554005.png",
+    "frequency": "Internet",
+    "tags": [
+      "talk",
+      "conspiracy",
+      "alternative",
+      "german"
+    ],
+    "is_ai_generated": false,
+    "id": 52
+  },
+  {
+    "name": "Moonlight Meditations",
+    "country": "USA",
+    "stream_url": "http://51.255.235.165:5456/stream/1/",
+    "description": "World-influenced ambient, meditation, and minimalist music",
+    "city": "San Francisco",
+    "genre": "Ambient",
+    "language": "English",
+    "website": "https://worldfusionradio.com/home-page/moonlight-meditations/",
+    "image_url": "http://radio.pervii.com/im/8/1562139138.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "ambient",
+      "meditation",
+      "world",
+      "relaxing"
+    ],
+    "is_ai_generated": false,
+    "id": 53
+  },
+  {
+    "name": "Radio Mojdeh",
+    "country": "USA",
+    "stream_url": "http://ic2326.c1261.fast-serv.com:80/rm128",
+    "description": "Iranian Farsi/Persian Christian music and talk for evangelism and Bible teaching",
+    "city": "Vancouver",
+    "genre": "Christian",
+    "language": "Persian",
+    "website": "https://www.radiomojdeh.com/",
+    "image_url": "http://radio.pervii.com/im/8/1549899138.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "christian",
+      "persian",
+      "farsi",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 54
+  },
+  {
+    "name": "Radio FM Faleria",
+    "country": "Italy",
+    "stream_url": "http://94.23.67.172:9209/stream/1/",
+    "description": "Italian radio with dance, house, and pop remixes since 1978",
+    "city": "Porto Sant'Elpidio",
+    "genre": "Dance",
+    "language": "Italian",
+    "website": "https://www.radiofm.biz/",
+    "image_url": "http://radio.pervii.com/logo/1403503599.png",
+    "frequency": "104.5 FM",
+    "tags": [
+      "dance",
+      "italian",
+      "house",
+      "pop"
+    ],
+    "is_ai_generated": false,
+    "id": 55
+  },
+  {
+    "name": "Radio Stand By",
+    "country": "Italy",
+    "stream_url": "http://188.165.206.81:8010/stream/1/",
+    "description": "Quality music across 50 years with information and comedy shows",
+    "city": "Rome",
+    "genre": "Pop",
+    "language": "Italian",
+    "website": "https://www.radiostandby.com/",
+    "image_url": "http://radio.pervii.com/logo/114704.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "pop",
+      "classics",
+      "talk",
+      "italian"
+    ],
+    "is_ai_generated": false,
+    "id": 57
+  },
+  {
+    "name": "Yugotopia Beat Club",
+    "country": "Germany",
+    "stream_url": "http://yugotopia-beat-club.stream.laut.fm/yugotopia-beat-club",
+    "description": "Journey into ex-Yugoslav and international rock history from 1950-2025 with punk, gothic, and more",
+    "city": "Duisburg",
+    "genre": "Rock",
+    "language": "German",
+    "website": "https://laut.fm/yugotopia-beat-club",
+    "image_url": "http://radio.pervii.com/logo/1403554005.png",
+    "frequency": "Internet",
+    "tags": [
+      "rock",
+      "punk",
+      "yugoslav",
+      "history"
+    ],
+    "is_ai_generated": false,
+    "id": 58
+  },
+  {
+    "name": "SongCast Radio - International/World",
+    "country": "USA",
+    "stream_url": "http://songcastradio.com:9024/stream/1/",
+    "description": "Independent music discovery with world music from emerging artists",
+    "city": "Cuyahoga Falls",
+    "genre": "World",
+    "language": "English",
+    "website": "https://songcastradio.com/",
+    "image_url": "http://radio.pervii.com/logo/115472.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "world",
+      "indie",
+      "discovery",
+      "global"
+    ],
+    "is_ai_generated": false,
+    "id": 59
+  },
+  {
+    "name": "Radio Power",
+    "country": "Germany",
+    "stream_url": "http://radio-power.stream.laut.fm/radio-power",
+    "description": "Power radio with current hits and variety programming",
+    "city": "Berlin",
+    "genre": "Pop",
+    "language": "German",
+    "website": "https://laut.fm/radio-power",
+    "image_url": "http://radio.pervii.com/logo/1403554005.png",
+    "frequency": "Internet",
+    "tags": [
+      "pop",
+      "hits",
+      "variety",
+      "german"
+    ],
+    "is_ai_generated": false,
+    "id": 60
+  },
+  {
+    "name": "Multicultural Radio",
+    "country": "USA",
+    "stream_url": "http://192.99.170.8:5042/stream/1/",
+    "description": "Multilingual broadcasting for ethnic communities including Chinese, Spanish, Korean, and more",
+    "city": "New York",
+    "genre": "Various",
+    "language": "Multiple",
+    "website": "http://mrbi.net/",
+    "image_url": "http://radio.pervii.com/im/5/1549710295.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "multicultural",
+      "ethnic",
+      "various",
+      "global"
+    ],
+    "is_ai_generated": false,
+    "id": 61
+  },
+  {
+    "name": "X-Move",
+    "country": "France",
+    "stream_url": "http://5.39.82.219:11428",
+    "description": "Webradio with varied and entertaining programming, live shows, and artist interviews",
+    "city": "Mont-Saint-Martin",
+    "genre": "Pop",
+    "language": "French",
+    "website": "https://xmove.fr/",
+    "image_url": "http://radio.pervii.com/im/7/1550493027.jpg",
+    "frequency": "Internet",
+    "tags": [
+      "pop",
+      "variety",
+      "talk",
+      "french"
+    ],
+    "is_ai_generated": false,
+    "id": 62
+  }
+]

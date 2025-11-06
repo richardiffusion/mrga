@@ -1,0 +1,64 @@
+{
+  "name": "RadioStation",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the radio station"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the station"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country where the station is based"
+    },
+    "city": {
+      "type": "string",
+      "description": "City where the station is based"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Main genre (e.g., Pop, Rock, Jazz, News, Talk)"
+    },
+    "language": {
+      "type": "string",
+      "description": "Primary broadcast language"
+    },
+    "stream_url": {
+      "type": "string",
+      "description": "Direct streaming URL"
+    },
+    "website": {
+      "type": "string",
+      "description": "Official website URL"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Station logo or image"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "FM/AM frequency if applicable"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for categorization (e.g., chill, energetic, vintage)"
+    },
+    "is_ai_generated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this is an AI-generated radio/podcast"
+    }
+  },
+  "required": [
+    "name",
+    "country",
+    "genre",
+    "stream_url"
+  ]
+}
