@@ -12,6 +12,9 @@ A modern online radio station discovery platform that helps users find radio sta
 - **Filtering**: Filter by music genre and country
 - **Responsive Design**: Optimized for both desktop and mobile devices
 
+<img width="1521" height="1662" alt="image" src="https://github.com/user-attachments/assets/5c0b8a3e-97e3-4b8d-9fe0-5a1b76afbd79" />
+
+
 ## 🛠 Tech Stack
 
 ### Frontend
