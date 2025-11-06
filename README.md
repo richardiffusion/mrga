@@ -110,6 +110,7 @@ npm run dev
 ```
 
 ## 📁 Project Structure
+```txt
 mrga/
 ├── frontend/                 # React frontend
 │   ├── src/
@@ -126,7 +127,7 @@ mrga/
 │   │   ├── services/       # Business logic
 │   │   └── data/           # Data layer
 └── README.md
-
+```
 ## 🔧 API Configuration
 The application supports multiple AI providers:
 1. DeepSeek (Primary): Set DEEPSEEK_API_KEY in your environment variables
