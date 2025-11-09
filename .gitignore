@@ -264,3 +264,6 @@ config/secrets.json
 api_keys.json
 secrets.json
 config.json
+
+# Change log
+CHANGE_LOG.md
