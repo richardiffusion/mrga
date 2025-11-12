@@ -937,5 +937,2351 @@
     ],
     "is_ai_generated": false,
     "id": 62
+  },
+  {
+    "name": "DV Radio",
+    "country": "USA",
+    "stream_url": "https://listen.radioking.com/radio/408604/stream/461101",
+    "description": "DV Radio Network for Veterans, Active Duty, Guard and Reserve members with music and REAL Veteran hosts",
+    "city": "Washington DC",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://dvradio.net/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/125984.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "various",
+      "talk",
+      "music",
+      "veterans"
+    ],
+    "is_ai_generated": false,
+    "id": 63
+  },
+  {
+    "name": "107.9 The Fan",
+    "country": "USA",
+    "stream_url": "https://stream-14.aiir.com/40rhv8uwcugtv",
+    "description": "Sports radio station featuring local sports talk and coverage",
+    "city": "Texarkana",
+    "genre": "Sports",
+    "language": "English",
+    "website": "https://1079thefan.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/25172.v6.png",
+    "frequency": "107.9 FM",
+    "tags": [
+      "sports",
+      "talk",
+      "news"
+    ],
+    "is_ai_generated": false,
+    "id": 64
+  },
+  {
+    "name": "Gold Hits WKVA",
+    "country": "USA",
+    "stream_url": "https://streams.radiomast.io/ea61c097-e9db-4aa5-b27e-c58681372d48?1718788262847=&ampampreferer=onlineradiobox",
+    "description": "Classic hits from the 60s, 70s, and 80s with local news and information",
+    "city": "Lewistown",
+    "genre": "Classic Hits",
+    "language": "English",
+    "website": "https://goldhitswkva.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/109537.v2.png",
+    "frequency": "920 AM / 100.3 FM",
+    "tags": [
+      "classic hits",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "is_ai_generated": false,
+    "id": 65
+  },
+  {
+    "name": "The Flagship - The Global Media Network",
+    "country": "USA",
+    "stream_url": "https://streams.radiomast.io/69b46d3b-3a13-4473-9c39-bad33c36b501?referer=onlineradiobox",
+    "description": "Internet talk network focused on singles and positive community content",
+    "city": "Rochester",
+    "genre": "Talk",
+    "language": "English",
+    "website": "https://www.goingsolonetwork.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/33845.v11.png",
+    "frequency": "Internet",
+    "tags": [
+      "talk",
+      "community",
+      "positive"
+    ],
+    "is_ai_generated": false,
+    "id": 66
+  },
+  {
+    "name": "KPOV FM",
+    "country": "USA",
+    "stream_url": "https://kpov-ice.streamguys1.com/live",
+    "description": "Community radio with eclectic music, news, and talk shows",
+    "city": "Bend",
+    "genre": "Public",
+    "language": "English",
+    "website": "https://kpov.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/22031.v1.png",
+    "frequency": "88.9 FM",
+    "tags": [
+      "public",
+      "eclectic",
+      "news",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 67
+  },
+  {
+    "name": "WGSN-DB",
+    "country": "USA",
+    "stream_url": "https://listen.radioking.com/radio/628891/stream/691327",
+    "description": "Going Solo Network - Singles' Internet Talk Radio with positive content",
+    "city": "Gulfport",
+    "genre": "Talk",
+    "language": "English",
+    "website": "https://www.goingsolonetwork.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/125900.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "talk",
+      "positive",
+      "community"
+    ],
+    "is_ai_generated": false,
+    "id": 68
+  },
+  {
+    "name": "Promote The Peace Radio",
+    "country": "USA",
+    "stream_url": "https://s42.myradiostream.com/:33328/listen.mp3",
+    "description": "Community radio promoting peace with music and talk for youth",
+    "city": "Sacramento",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://www.promotethepeaceradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/12714.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "various",
+      "youth",
+      "community"
+    ],
+    "is_ai_generated": false,
+    "id": 69
+  },
+  {
+    "name": "Oldies by the Year",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a03164",
+    "description": "Oldies music from a different year each hour, all 70s weekdays, all 60s weekends",
+    "city": "Chicago",
+    "genre": "Oldies",
+    "language": "English",
+    "website": "https://live365.com/station/Oldies-by-the-Year-a03164",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/133357.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "oldies",
+      "60s",
+      "70s"
+    ],
+    "is_ai_generated": false,
+    "id": 70
+  },
+  {
+    "name": "90.3 KBJS",
+    "country": "USA",
+    "stream_url": "https://ice64.securenetsystems.net/KBJS",
+    "description": "Christian radio station with teaching and music",
+    "city": "Jacksonville",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://kbjs.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/20265.v2.png",
+    "frequency": "90.3 FM",
+    "tags": [
+      "christian",
+      "religious",
+      "teaching"
+    ],
+    "is_ai_generated": false,
+    "id": 71
+  },
+  {
+    "name": "WMKT",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/mgb-wmktamaac-hlsc4.m3u8",
+    "description": "Northern Michigan's News Talk Leader with local and national talk shows",
+    "city": "Charlevoix",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://www.wmkt.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/129043.v3.png",
+    "frequency": "1270 AM",
+    "tags": [
+      "news",
+      "talk",
+      "sports"
+    ],
+    "is_ai_generated": false,
+    "id": 72
+  },
+  {
+    "name": "Birth Rite Radio",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a09168",
+    "description": "Radio station focused on birth rights and various music genres",
+    "city": "Chicago",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://birthriteradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/97433.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "various",
+      "talk",
+      "education"
+    ],
+    "is_ai_generated": false,
+    "id": 73
+  },
+  {
+    "name": "Radio Kansas",
+    "country": "USA",
+    "stream_url": "https://streams.radiomast.io/5567306a-66f6-4d8f-a399-520e2936e3a0?referer=onlineradiobox",
+    "description": "Public radio with classical music, news, and local programming",
+    "city": "Hutchinson",
+    "genre": "Public",
+    "language": "English",
+    "website": "https://radiokansas.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/36155.v8.png",
+    "frequency": "Various FM",
+    "tags": [
+      "public",
+      "classical",
+      "news"
+    ],
+    "is_ai_generated": false,
+    "id": 74
+  },
+  {
+    "name": "WTBJ",
+    "country": "USA",
+    "stream_url": "https://stationplaylist.com:9050/truth1.aac",
+    "description": "Christian radio with truth and blessings",
+    "city": "Oxford",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://wtbj.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/3341.v4.png",
+    "frequency": "91.3 FM",
+    "tags": [
+      "christian",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 75
+  },
+  {
+    "name": "WLIV",
+    "country": "USA",
+    "stream_url": "https://stonecomradio.streamguys1.com/wliv",
+    "description": "Local country music station with news and sports",
+    "city": "Livingston",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://wliv.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116491.v1.png",
+    "frequency": "920 AM / 104.7 FM",
+    "tags": [
+      "country",
+      "news",
+      "sports"
+    ],
+    "is_ai_generated": false,
+    "id": 76
+  },
+  {
+    "name": "Fierte Haitienne FM",
+    "country": "USA",
+    "stream_url": "https://stream.rcast.net/65300",
+    "description": "Haitian community radio with music and talk in Creole",
+    "city": "Brooklyn",
+    "genre": "Various",
+    "language": "Creole",
+    "website": "https://fiertehaitiennefm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/34733.v5.png",
+    "frequency": "88.5 FM",
+    "tags": [
+      "haitian",
+      "creole",
+      "music",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 77
+  },
+  {
+    "name": "Kreactivo",
+    "country": "USA",
+    "stream_url": "https://turadio.kreactivo.com/8002/stream?t=1761213083387",
+    "description": "Retro music station with 80s and 90s hits",
+    "city": "Douglas",
+    "genre": "Retro",
+    "language": "English",
+    "website": "https://kreactivo.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/93278.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "retro",
+      "80s",
+      "90s"
+    ],
+    "is_ai_generated": false,
+    "id": 78
+  },
+  {
+    "name": "Real Country 106.7",
+    "country": "USA",
+    "stream_url": "https://stream.aiir.com/rz5p837j0fhtv",
+    "description": "Classic country music station",
+    "city": "Hicksville",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://www.realcountry1067.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/24042.v3.png",
+    "frequency": "106.7 FM",
+    "tags": [
+      "country",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 79
+  },
+  {
+    "name": "92.9 Jack FM, Hazlehurst",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/telesouth-wdxofmaac-imc1",
+    "description": "Adult hits station playing a variety of music",
+    "city": "Hazlehurst",
+    "genre": "Adult Hits",
+    "language": "English",
+    "website": "https://jack929.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116663.v4.png",
+    "frequency": "92.9 FM",
+    "tags": [
+      "adult hits",
+      "variety"
+    ],
+    "is_ai_generated": false,
+    "id": 80
+  },
+  {
+    "name": "Annunciation Radio",
+    "country": "USA",
+    "stream_url": "https://das-edge12-live365-dal02.cdnstream.com/a21358",
+    "description": "Catholic radio with education, talk, and entertainment",
+    "city": "Toledo",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://annunciationradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/23711.v1.png",
+    "frequency": "Various FM",
+    "tags": [
+      "christian",
+      "catholic",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 81
+  },
+  {
+    "name": "102.5 The Lake",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WMAYFMAAC.m3u8?dist=onlineradiobox",
+    "description": "Adult contemporary music station",
+    "city": "Greenville",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://1025thelake.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/120655.v4.png",
+    "frequency": "102.5 FM",
+    "tags": [
+      "adult contemporary",
+      "pop"
+    ],
+    "is_ai_generated": false,
+    "id": 82
+  },
+  {
+    "name": "97.7 The Groove",
+    "country": "USA",
+    "stream_url": "https://ice41.securenetsystems.net/WKZWHD2",
+    "description": "R&B and soul music station",
+    "city": "Laurel",
+    "genre": "R&B",
+    "language": "English",
+    "website": "https://977thegroove.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/77063.v4.png",
+    "frequency": "97.7 FM",
+    "tags": [
+      "r&b",
+      "soul",
+      "groove"
+    ],
+    "is_ai_generated": false,
+    "id": 83
+  },
+  {
+    "name": "WBGU 88.1 FM",
+    "country": "USA",
+    "stream_url": "https://dvstream2.bgsu.edu/wbgu",
+    "description": "Public radio with community news, information, and music",
+    "city": "Bowling Green",
+    "genre": "Public",
+    "language": "English",
+    "website": "https://www.wbgu.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/23376.v1.png",
+    "frequency": "88.1 FM",
+    "tags": [
+      "public",
+      "news",
+      "music"
+    ],
+    "is_ai_generated": false,
+    "id": 84
+  },
+  {
+    "name": "Revelation Radio",
+    "country": "USA",
+    "stream_url": "https://us1.streamingpulse.com/ssl/revelationradio",
+    "description": "Christian talk radio with family-friendly content",
+    "city": "Grand Saline",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://revelationradio.net/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/70754.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "christian",
+      "talk",
+      "family"
+    ],
+    "is_ai_generated": false,
+    "id": 85
+  },
+  {
+    "name": "Radio Alabanzas",
+    "country": "USA",
+    "stream_url": "https://ralabanzas.radioca.st/stream",
+    "description": "Christian music and alabanzas",
+    "city": "Riverside",
+    "genre": "Christian",
+    "language": "Spanish",
+    "website": "https://radioalabanzas.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/117218.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "christian",
+      "spanish",
+      "music"
+    ],
+    "is_ai_generated": false,
+    "id": 86
+  },
+  {
+    "name": "Easy FM 93.7",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/saga-woezfmaac-ibc2",
+    "description": "Soft adult contemporary music",
+    "city": "Burton",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://easyfm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/117562.v3.png",
+    "frequency": "93.7 FM",
+    "tags": [
+      "adult contemporary",
+      "easy listening"
+    ],
+    "is_ai_generated": false,
+    "id": 87
+  },
+  {
+    "name": "Q95.7",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KQSFFM_SC?dist=onlineradiobox",
+    "description": "Rock music station",
+    "city": "Dell Rapids",
+    "genre": "Rock",
+    "language": "English",
+    "website": "https://q957.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/101065.v4.png",
+    "frequency": "95.7 FM",
+    "tags": [
+      "rock"
+    ],
+    "is_ai_generated": false,
+    "id": 88
+  },
+  {
+    "name": "99X, Durango",
+    "country": "USA",
+    "stream_url": "https://streams.radiomast.io/db026977-562c-43c1-b98d-1a96a0721312?referer=onlineradiobox",
+    "description": "Alternative rock station",
+    "city": "Durango",
+    "genre": "Alternative",
+    "language": "English",
+    "website": "https://99xdurango.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/34115.v11.png",
+    "frequency": "99.7 FM",
+    "tags": [
+      "alternative",
+      "rock"
+    ],
+    "is_ai_generated": false,
+    "id": 89
+  },
+  {
+    "name": "Texarkana Fire Departments",
+    "country": "USA",
+    "stream_url": "https://broadcastify.cdnstream1.com/36968",
+    "description": "Scanner radio for fire departments in Texarkana area",
+    "city": "Texarkana",
+    "genre": "Scanner",
+    "language": "English",
+    "website": "https://www.broadcastify.com/listen/feed/36968",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/32500.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "scanner",
+      "emergency"
+    ],
+    "is_ai_generated": false,
+    "id": 90
+  },
+  {
+    "name": "KFHL - 91.7 FM",
+    "country": "USA",
+    "stream_url": "https://primary.christianradiostreaming.org/kfhl.mp3",
+    "description": "Christian radio with teaching and music",
+    "city": "Bakersfield",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://kfhl.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/132967.v1.png",
+    "frequency": "91.7 FM",
+    "tags": [
+      "christian",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 91
+  },
+  {
+    "name": "Vaz Media Broadcasting Radio",
+    "country": "USA",
+    "stream_url": "https://free.rcast.net/266750",
+    "description": "Broadcasting various music and content",
+    "city": "Gulfport",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://vazmedia.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/82036.v10.png",
+    "frequency": "Internet",
+    "tags": [
+      "various"
+    ],
+    "is_ai_generated": false,
+    "id": 92
+  },
+  {
+    "name": "Heaven 1390 AM & 100.1 FM",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/saga-wspoamaac-ibc1",
+    "description": "Gospel music and religious programming",
+    "city": "Charleston",
+    "genre": "Gospel",
+    "language": "English",
+    "website": "https://heaven1390.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/99525.v12.png",
+    "frequency": "1390 AM / 100.1 FM",
+    "tags": [
+      "gospel",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 93
+  },
+  {
+    "name": "WNYO",
+    "country": "USA",
+    "stream_url": "https://uk4.internet-radio.com/proxy/wnyo01?mp=/stream",
+    "description": "Student-run radio with alternative music",
+    "city": "Oswego",
+    "genre": "College",
+    "language": "English",
+    "website": "https://wnyo889.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/34258.v4.png",
+    "frequency": "88.9 FM",
+    "tags": [
+      "college",
+      "alternative"
+    ],
+    "is_ai_generated": false,
+    "id": 94
+  },
+  {
+    "name": "Family First Radio Network",
+    "country": "USA",
+    "stream_url": "https://primary.christianradiostreaming.org/ffrn.mp3",
+    "description": "Christian radio network with teaching and music across multiple stations",
+    "city": "Various",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://familyfirstradio.net/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/71336.v9.png",
+    "frequency": "Various FM/AM",
+    "tags": [
+      "christian",
+      "religious",
+      "family"
+    ],
+    "is_ai_generated": false,
+    "id": 95
+  },
+  {
+    "name": "Orijina Afrobeats Radio",
+    "country": "USA",
+    "stream_url": "https://stream.zeno.fm/xluuqkhku02tv",
+    "description": "Platform for emerging Afrobeats artists",
+    "city": "New York",
+    "genre": "Afrobeats",
+    "language": "English",
+    "website": "https://www.afrobeatsrising.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/133326.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "afrobeats",
+      "african"
+    ],
+    "is_ai_generated": false,
+    "id": 96
+  },
+  {
+    "name": "The Positive Community Radio",
+    "country": "USA",
+    "stream_url": "https://listen.radioking.com/radio/490142/stream/546965",
+    "description": "Positive community-focused radio with music and talk",
+    "city": "Newark",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://thepositivecommunity.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/124831.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "various",
+      "community",
+      "positive"
+    ],
+    "is_ai_generated": false,
+    "id": 97
+  },
+  {
+    "name": "95.9 The Wolf",
+    "country": "USA",
+    "stream_url": "https://thassos.cdnstream.com/proxy/eastark4/stream?esPlayer&ampampcb=213021.m4a",
+    "description": "Country music station",
+    "city": "Harrisburg",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://959thewolf.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/115376.v4.png",
+    "frequency": "95.9 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 98
+  },
+  {
+    "name": "Highway 111 Country 96.9",
+    "country": "USA",
+    "stream_url": "https://stonecomradio.streamguys1.com/hwy111country",
+    "description": "Country music station",
+    "city": "Cookeville",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://highway111country.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116492.v1.png",
+    "frequency": "96.9 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 99
+  },
+  {
+    "name": "Red Dragon Radio",
+    "country": "USA",
+    "stream_url": "https://thassos.cdnstream.com/proxy/wonyfmri/stream",
+    "description": "Student-run college radio",
+    "city": "Oneonta",
+    "genre": "College",
+    "language": "English",
+    "website": "https://wonyfm.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/32637.v1.png",
+    "frequency": "90.9 FM",
+    "tags": [
+      "college",
+      "various"
+    ],
+    "is_ai_generated": false,
+    "id": 100
+  },
+  {
+    "name": "HOT FM, Dewey-Humboldt",
+    "country": "USA",
+    "stream_url": "https://ais-sa1.streamon.fm/7855_96k.aac",
+    "description": "Hot adult contemporary music",
+    "city": "Dewey-Humboldt",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://hot975phoenix.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/27895.v12.png",
+    "frequency": "97.5 FM / 103.9 FM",
+    "tags": [
+      "adult contemporary",
+      "hot"
+    ],
+    "is_ai_generated": false,
+    "id": 101
+  },
+  {
+    "name": "North Central PA's Q-FM",
+    "country": "USA",
+    "stream_url": "https://stream.zeno.fm/edonjxcqqobvv",
+    "description": "Classic country music",
+    "city": "Williamsport",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://northcentralpaqfm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/119431.v8.png",
+    "frequency": "Internet",
+    "tags": [
+      "country",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 102
+  },
+  {
+    "name": "Y-101.3",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/powell-kkyyfmaac-ibc2",
+    "description": "Country music station",
+    "city": "Whiting",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://y1013.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/36376.v17.png",
+    "frequency": "101.3 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 103
+  },
+  {
+    "name": "98.5 WNUW",
+    "country": "USA",
+    "stream_url": "https://wnuw.broadcasttool.stream/play",
+    "description": "Student-run college radio",
+    "city": "Aston Mills",
+    "genre": "College",
+    "language": "English",
+    "website": "https://wnuw.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/130141.v2.png",
+    "frequency": "98.5 FM",
+    "tags": [
+      "college",
+      "various"
+    ],
+    "is_ai_generated": false,
+    "id": 104
+  },
+  {
+    "name": "KCHI",
+    "country": "USA",
+    "stream_url": "https://stream.aiir.com/b1mvfkwarqgtv",
+    "description": "Classic rock and oldies",
+    "city": "Chillicothe",
+    "genre": "Classic Rock",
+    "language": "English",
+    "website": "https://kchi.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/109357.v8.png",
+    "frequency": "Various",
+    "tags": [
+      "classic rock",
+      "oldies"
+    ],
+    "is_ai_generated": false,
+    "id": 105
+  },
+  {
+    "name": "WUML",
+    "country": "USA",
+    "stream_url": "https://securestream.casthost.net:8609/",
+    "description": "Student-run college radio with underground music",
+    "city": "Lowell",
+    "genre": "College",
+    "language": "English",
+    "website": "https://wuml.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/32715.v3.png",
+    "frequency": "91.5 FM",
+    "tags": [
+      "college",
+      "underground"
+    ],
+    "is_ai_generated": false,
+    "id": 106
+  },
+  {
+    "name": "ESPN 106.9 & 1360",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/saga-whbgamaac-imc",
+    "description": "Sports radio with local and national coverage",
+    "city": "Harrisonburg",
+    "genre": "Sports",
+    "language": "English",
+    "website": "https://espn1069.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/127155.v2.png",
+    "frequency": "106.9 FM / 1360 AM",
+    "tags": [
+      "sports"
+    ],
+    "is_ai_generated": false,
+    "id": 107
+  },
+  {
+    "name": "93.5 The Coyote",
+    "country": "USA",
+    "stream_url": "https://stream.aiir.com/te0ei3dgncbtv",
+    "description": "Country music station",
+    "city": "Greenville",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://935thecoyote.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/18597.v9.png",
+    "frequency": "93.5 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 108
+  },
+  {
+    "name": "Tropical 809",
+    "country": "USA",
+    "stream_url": "https://sp.totalstreaming.net:8058/",
+    "description": "Tropical music station",
+    "city": "Lawrence",
+    "genre": "Tropical",
+    "language": "Spanish",
+    "website": "https://tropical809.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/132923.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "tropical",
+      "latin"
+    ],
+    "is_ai_generated": false,
+    "id": 109
+  },
+  {
+    "name": "92.9 The Point",
+    "country": "USA",
+    "stream_url": "https://streams.radiomast.io/b8a0d744-329a-44d8-8ed8-f2c80fb3994a?referer=onlineradiobox",
+    "description": "Adult contemporary hits",
+    "city": "Bayfield",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://929thepoint.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/32823.v16.png",
+    "frequency": "92.9 FM",
+    "tags": [
+      "adult contemporary",
+      "hits"
+    ],
+    "is_ai_generated": false,
+    "id": 110
+  },
+  {
+    "name": "88.5 KVFE Life Changing Radio",
+    "country": "USA",
+    "stream_url": "https://ais-sa15.cdnstream1.com/5066_64.aac",
+    "description": "Christian life changing radio",
+    "city": "Del Rio",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://kvfe.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/57814.v6.png",
+    "frequency": "88.5 FM",
+    "tags": [
+      "christian",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 111
+  },
+  {
+    "name": "POINTMAN'S GROOVE RADIO",
+    "country": "USA",
+    "stream_url": "https://a10.asurahosting.com:7840/radio.mp3",
+    "description": "Groove and jazz music",
+    "city": "Bossier City",
+    "genre": "Groove",
+    "language": "English",
+    "website": "https://pointmansgrooveradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/113557.v8.png",
+    "frequency": "Internet",
+    "tags": [
+      "groove",
+      "jazz"
+    ],
+    "is_ai_generated": false,
+    "id": 112
+  },
+  {
+    "name": "107.9 The Eagle",
+    "country": "USA",
+    "stream_url": "http://hostbilly.com:8190/eagle-meta",
+    "description": "Classic rock station",
+    "city": "Show Low",
+    "genre": "Classic Rock",
+    "language": "English",
+    "website": "https://1079theeagle.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/111875.v1.png",
+    "frequency": "107.9 FM",
+    "tags": [
+      "classic rock"
+    ],
+    "is_ai_generated": false,
+    "id": 113
+  },
+  {
+    "name": "99.5 The Wolf",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/audacy-kwjjfmaac-imc",
+    "description": "Country music station",
+    "city": "Portland",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://995thewolf.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/35886.v13.png",
+    "frequency": "99.5 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 114
+  },
+  {
+    "name": "KEOS 89.1 FM",
+    "country": "USA",
+    "stream_url": "https://58ab2f7be5d91.streamlock.net:7810/stream",
+    "description": "Community radio with eclectic programming",
+    "city": "College Station",
+    "genre": "Community",
+    "language": "English",
+    "website": "https://keos.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/18696.v2.png",
+    "frequency": "89.1 FM",
+    "tags": [
+      "community",
+      "eclectic"
+    ],
+    "is_ai_generated": false,
+    "id": 115
+  },
+  {
+    "name": "KTAG",
+    "country": "USA",
+    "stream_url": "https://ice26.securenetsystems.net/KTAG",
+    "description": "Adult contemporary music",
+    "city": "Cody",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://ktag.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/115388.v3.png",
+    "frequency": "97.9 FM",
+    "tags": [
+      "adult contemporary"
+    ],
+    "is_ai_generated": false,
+    "id": 116
+  },
+  {
+    "name": "KZMQ",
+    "country": "USA",
+    "stream_url": "https://ice26.securenetsystems.net/KZMQ",
+    "description": "Country music station",
+    "city": "Greybull",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://kzmq.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/115389.v3.png",
+    "frequency": "100.3 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 117
+  },
+  {
+    "name": "Coyote Radio",
+    "country": "USA",
+    "stream_url": "http://janus.cdnstream.com:5314/stream",
+    "description": "Student-run college radio with alternative music",
+    "city": "San Bernardino",
+    "genre": "College",
+    "language": "English",
+    "website": "https://coyoteradio.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/15585.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "college",
+      "alternative"
+    ],
+    "is_ai_generated": false,
+    "id": 118
+  },
+  {
+    "name": "WIXY 100.3",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/saga-wixyfmaac-ibc1",
+    "description": "Country music station",
+    "city": "Champaign",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://wixy.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116227.v7.png",
+    "frequency": "100.3 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 119
+  },
+  {
+    "name": "Master's Touch Internet Radio",
+    "country": "USA",
+    "stream_url": "https://cupcake.citrus3.com:8448/stream",
+    "description": "Christian music and teaching",
+    "city": "Cincinnati",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://masterstouchradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/89907.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "christian",
+      "religious"
+    ],
+    "is_ai_generated": false,
+    "id": 120
+  },
+  {
+    "name": "100.9 FM Rocks",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WBZGFMAAC.aac?dist=onlineradiobox",
+    "description": "Rock music station",
+    "city": "Peru",
+    "genre": "Rock",
+    "language": "English",
+    "website": "https://1009fmrocks.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/127326.v3.png",
+    "frequency": "100.9 FM",
+    "tags": [
+      "rock"
+    ],
+    "is_ai_generated": false,
+    "id": 121
+  },
+  {
+    "name": "ESPN 1240 The Boss",
+    "country": "USA",
+    "stream_url": "https://ice7.securenetsystems.net/WTONAM",
+    "description": "Sports radio station",
+    "city": "Staunton",
+    "genre": "Sports",
+    "language": "English",
+    "website": "https://espn1240theboss.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/21484.v6.png",
+    "frequency": "1240 AM",
+    "tags": [
+      "sports"
+    ],
+    "is_ai_generated": false,
+    "id": 122
+  },
+  {
+    "name": "EZ 99.9",
+    "country": "USA",
+    "stream_url": "http://live.amperwave.net/manifest/saga-wqezamaac-ibc",
+    "description": "Easy listening adult contemporary",
+    "city": "Fort Campbell North",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://ez999.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/128103.v2.png",
+    "frequency": "1370 AM",
+    "tags": [
+      "adult contemporary",
+      "easy listening"
+    ],
+    "is_ai_generated": false,
+    "id": 123
+  },
+  {
+    "name": "World Beat Center",
+    "country": "USA",
+    "stream_url": "https://listen.mixlr.com/9e2cc90bc014a52d3b9aef9f7d42143d",
+    "description": "World music and cultural programming",
+    "city": "San Diego",
+    "genre": "World",
+    "language": "English",
+    "website": "https://www.worldbeatcenter.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/13116.v3.png",
+    "frequency": "Internet",
+    "tags": [
+      "world",
+      "cultural"
+    ],
+    "is_ai_generated": false,
+    "id": 124
+  },
+  {
+    "name": "The Plug Network Radio",
+    "country": "USA",
+    "stream_url": "https://s2.radio.co:80/s7900fd3d7/listen",
+    "description": "R&B, hip-hop, reggae, gospel",
+    "city": "Mount Vernon",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://theplugnetworkradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/112216.v3.png",
+    "frequency": "Internet",
+    "tags": [
+      "r&b",
+      "hip hop",
+      "reggae",
+      "gospel"
+    ],
+    "is_ai_generated": false,
+    "id": 125
+  },
+  {
+    "name": "WFYL 1180 AM",
+    "country": "USA",
+    "stream_url": "http://208.58.243.90/broadwave.mp3?src=1&ampamprate=1",
+    "description": "News talk and local programming",
+    "city": "King of Prussia",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://wfyl1180am.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/5870.v7.png",
+    "frequency": "1180 AM",
+    "tags": [
+      "news",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 126
+  },
+  {
+    "name": "KL80mix",
+    "country": "USA",
+    "stream_url": "https://a10.asurahosting.com:8980/radio.mp3",
+    "description": "80s music mix",
+    "city": "Unknown",
+    "genre": "80s",
+    "language": "English",
+    "website": "https://kl80mix.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/128107.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "80s"
+    ],
+    "is_ai_generated": false,
+    "id": 127
+  },
+  {
+    "name": "KELB-LP 100.5 FM",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a59327",
+    "description": "Christian radio",
+    "city": "Lake Charles",
+    "genre": "Christian",
+    "language": "English",
+    "website": "https://kelblp.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/18474.v2.png",
+    "frequency": "100.5 FM",
+    "tags": [
+      "christian"
+    ],
+    "is_ai_generated": false,
+    "id": 128
+  },
+  {
+    "name": "WKBK",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/saga-wkbkamaac-ibc2",
+    "description": "News talk radio",
+    "city": "Keene",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://wkbkradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116261.v4.png",
+    "frequency": "1290 AM",
+    "tags": [
+      "news",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 129
+  },
+  {
+    "name": "Enain en Linea",
+    "country": "USA",
+    "stream_url": "https://cloudstream2032.conectarhosting.com/8242/stream",
+    "description": "Christian Latin music",
+    "city": "Cincinnati",
+    "genre": "Christian",
+    "language": "Spanish",
+    "website": "https://enainenlinea.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/94361.v11.png",
+    "frequency": "Internet",
+    "tags": [
+      "christian",
+      "latin"
+    ],
+    "is_ai_generated": false,
+    "id": 130
+  },
+  {
+    "name": "KJJJ 102.3 FM",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a57909",
+    "description": "Country music",
+    "city": "Laughlin",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://kjjjfm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/5164.v4.png",
+    "frequency": "102.3 FM",
+    "tags": [
+      "country"
+    ],
+    "is_ai_generated": false,
+    "id": 131
+  },
+  {
+    "name": "WIUP FM",
+    "country": "USA",
+    "stream_url": "https://us2.maindigitalstream.com/ssl/WIUP",
+    "description": "Student-run college radio",
+    "city": "Indiana",
+    "genre": "College",
+    "language": "English",
+    "website": "https://wiupfm.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/20059.v3.png",
+    "frequency": "90.1 FM",
+    "tags": [
+      "college"
+    ],
+    "is_ai_generated": false,
+    "id": 132
+  },
+  {
+    "name": "Heavenly 1070 AM",
+    "country": "USA",
+    "stream_url": "https://us9.maindigitalstream.com/ssl/WEKT",
+    "description": "Talk and music",
+    "city": "Elizabethtown",
+    "genre": "Talk",
+    "language": "English",
+    "website": "https://heavenly1070.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/35845.v1.png",
+    "frequency": "1070 AM",
+    "tags": [
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 133
+  },
+  {
+    "name": "La Nueva 809",
+    "country": "USA",
+    "stream_url": "https://stream.zeno.fm/vhbtme2rmchvv",
+    "description": "Latin music station",
+    "city": "New York",
+    "genre": "Latin",
+    "language": "Spanish",
+    "website": "https://lanueva809.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/116286.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "latin",
+      "bachata"
+    ],
+    "is_ai_generated": false,
+    "id": 134
+  },
+  {
+    "name": "TMX",
+    "country": "USA",
+    "stream_url": "https://streams.kut.org/4430_56?aw_0_1st.playerid=tmx-free",
+    "description": "Texas music experience stream",
+    "city": "Austin",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://tmx.fm/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/113448.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "texas music"
+    ],
+    "is_ai_generated": false,
+    "id": 135
+  },
+  {
+    "name": "Ke Pachanga Radio",
+    "country": "USA",
+    "stream_url": "https://a6.asurahosting.com:8480/radio.mp3",
+    "description": "Latin music and entertainment",
+    "city": "Baltimore",
+    "genre": "Latin",
+    "language": "Spanish",
+    "website": "https://kepachanga.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/33178.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "latin",
+      "entertainment"
+    ],
+    "is_ai_generated": false,
+    "id": 136
+  },
+  {
+    "name": "KSFO 560 AM",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KSFOAMAAC.aac",
+    "description": "Hot talk radio",
+    "city": "San Francisco",
+    "genre": "Talk",
+    "language": "English",
+    "website": "https://ksfo.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/02/6220.v10.png",
+    "frequency": "560 AM",
+    "tags": [
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 137
+  },
+  {
+    "name": "Legends 102.7",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLGZFM.mp3",
+    "description": "Classic hits music",
+    "city": "Webster",
+    "genre": "Classic Hits",
+    "language": "English",
+    "website": "https://legends1027.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/5461.v4.png",
+    "frequency": "102.7 FM",
+    "tags": [
+      "classic hits"
+    ],
+    "is_ai_generated": false,
+    "id": 138
+  },
+  {
+    "name": "Hot 108 JAMZ",
+    "country": "USA",
+    "stream_url": "http://sc.hot108.com:4000/",
+    "description": "Hip hop music",
+    "city": "New York",
+    "genre": "Hip Hop",
+    "language": "English",
+    "website": "https://hot108.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6408.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "hip hop"
+    ],
+    "is_ai_generated": false,
+    "id": 139
+  },
+  {
+    "name": "NYC House Radio",
+    "country": "USA",
+    "stream_url": "https://www.ophanim.net:8444/s/8400/",
+    "description": "House music from NYC",
+    "city": "New York",
+    "genre": "House",
+    "language": "English",
+    "website": "https://nychouseradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/34439.v3.png",
+    "frequency": "Internet",
+    "tags": [
+      "house",
+      "dance"
+    ],
+    "is_ai_generated": false,
+    "id": 140
+  },
+  {
+    "name": "Amazing Smooth and Jazz",
+    "country": "USA",
+    "stream_url": "https://stream.amazingradios.com/jazz",
+    "description": "Smooth jazz music",
+    "city": "Chicago",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://amazingradios.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/80166.v15.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 141
+  },
+  {
+    "name": "Rock, Mosinee",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WOZZFMAAC.aac",
+    "description": "Rock music station in Mosinee",
+    "city": "Mosinee",
+    "genre": "Rock",
+    "language": "English",
+    "website": "https://rockmosinee.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/10163.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "rock"
+    ],
+    "is_ai_generated": false,
+    "id": 142
+  },
+  {
+    "name": "Heartland Public Radio - HPR1: Traditional Classic Country",
+    "country": "USA",
+    "stream_url": "https://us2.maindigitalstream.com/ssl/7713",
+    "description": "Traditional classic country music",
+    "city": "Branson",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://heartlandpublicradio.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/28427.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "country",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 143
+  },
+  {
+    "name": "ESPN 850 AM",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/direct/goodkarma-wknramaac-ibc2",
+    "description": "Sports radio",
+    "city": "Cleveland",
+    "genre": "Sports",
+    "language": "English",
+    "website": "https://espn850.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6977.v10.png",
+    "frequency": "850 AM",
+    "tags": [
+      "sports"
+    ],
+    "is_ai_generated": false,
+    "id": 144
+  },
+  {
+    "name": "77 WABC Radio",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WABCAM.mp3",
+    "description": "News talk radio",
+    "city": "New York",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://wabcradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6220.v10.png",
+    "frequency": "770 AM",
+    "tags": [
+      "news",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 145
+  },
+  {
+    "name": "SmoothJazz.com Global",
+    "country": "USA",
+    "stream_url": "https://smoothjazz.cdnstream1.com/2585_128.mp3",
+    "description": "Smooth jazz music",
+    "city": "California City",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://www.smoothjazz.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/3608.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 146
+  },
+  {
+    "name": "America's Greatest 70s Hits",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a73516",
+    "description": "70s hits music",
+    "city": "Chicago",
+    "genre": "70s",
+    "language": "English",
+    "website": "https://americasgreatest70shits.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/59963.v18.png",
+    "frequency": "Internet",
+    "tags": [
+      "70s",
+      "hits"
+    ],
+    "is_ai_generated": false,
+    "id": 147
+  },
+  {
+    "name": "Rock 92",
+    "country": "USA",
+    "stream_url": "https://dbc.streamguys1.com/wkrr-fm.aac",
+    "description": "Classic rock music",
+    "city": "Greensboro",
+    "genre": "Rock",
+    "language": "English",
+    "website": "https://rock92.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/23230.v5.png",
+    "frequency": "92.3 FM",
+    "tags": [
+      "rock",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 148
+  },
+  {
+    "name": "Radyo Pa Nou",
+    "country": "USA",
+    "stream_url": "http://panou.internettunes.com:8015/",
+    "description": "Political talk in Creole, French, English",
+    "city": "Brooklyn",
+    "genre": "Talk",
+    "language": "Creole",
+    "website": "https://radyopanou.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/28089.v2.png",
+    "frequency": "88.9 FM",
+    "tags": [
+      "talk",
+      "political"
+    ],
+    "is_ai_generated": false,
+    "id": 149
+  },
+  {
+    "name": "Metal Rock Radio",
+    "country": "USA",
+    "stream_url": "https://kathy.torontocast.com:2800/",
+    "description": "Metal and rock music",
+    "city": "Baltimore",
+    "genre": "Metal",
+    "language": "English",
+    "website": "https://metalrockradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/33335.v7.png",
+    "frequency": "Internet",
+    "tags": [
+      "metal",
+      "rock"
+    ],
+    "is_ai_generated": false,
+    "id": 150
+  },
+  {
+    "name": "Kiss FM, Appleton",
+    "country": "USA",
+    "stream_url": "https://woodward-radio.streamb.live/SB00132",
+    "description": "Top 40 music",
+    "city": "Appleton",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "https://kissfmappleton.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/9330.v8.png",
+    "frequency": "95.9 FM",
+    "tags": [
+      "top 40",
+      "pop"
+    ],
+    "is_ai_generated": false,
+    "id": 151
+  },
+  {
+    "name": "Classic Country 1520 KXA",
+    "country": "USA",
+    "stream_url": "https://www.ophanim.net:8444/s/9410",
+    "description": "Classic country music",
+    "city": "Everett",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://classiccountrykxa.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/11172.v2.png",
+    "frequency": "1520 AM",
+    "tags": [
+      "country",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 152
+  },
+  {
+    "name": "WBAP News Talk 820 AM",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WBAPAMAAC.aac",
+    "description": "News talk radio",
+    "city": "Dallas",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://wbap.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6349.v2.png",
+    "frequency": "820 AM",
+    "tags": [
+      "news",
+      "talk"
+    ],
+    "is_ai_generated": false,
+    "id": 153
+  },
+  {
+    "name": "TRUE OLDIES CHANNEL",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/b92108_128mp3",
+    "description": "True oldies music",
+    "city": "Various",
+    "genre": "Oldies",
+    "language": "English",
+    "website": "https://trueoldieschannel.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30933.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "oldies"
+    ],
+    "is_ai_generated": false,
+    "id": 154
+  },
+  {
+    "name": "The River, Copperopolis",
+    "country": "USA",
+    "stream_url": "http://208.74.9.25:8000/krvr.mp3",
+    "description": "Classic hits music",
+    "city": "Copperopolis",
+    "genre": "Classic Hits",
+    "language": "English",
+    "website": "https://krvr.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30150.v6.png",
+    "frequency": "105.5 FM",
+    "tags": [
+      "classic hits"
+    ],
+    "is_ai_generated": false,
+    "id": 155
+  },
+  {
+    "name": "Z108",
+    "country": "USA",
+    "stream_url": "https://stream.zeno.fm/nr06cg2z96duv",
+    "description": "Top 40 hits",
+    "city": "Buffalo",
+    "genre": "Top 40",
+    "language": "English",
+    "website": "https://z108.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/28433.v7.png",
+    "frequency": "Internet",
+    "tags": [
+      "top 40",
+      "pop"
+    ],
+    "is_ai_generated": false,
+    "id": 156
+  },
+  {
+    "name": "The Jazz Groove",
+    "country": "USA",
+    "stream_url": "http://aac-64.streamthejazzgroove.com?referer=olradiobox/",
+    "description": "Laid-back jazz music",
+    "city": "San Francisco",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://jazzgroove.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/9663.v11.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz"
+    ],
+    "is_ai_generated": false,
+    "id": 157
+  },
+  {
+    "name": "Laurel Canyon Radio",
+    "country": "USA",
+    "stream_url": "http://s10.voscast.com:7858/",
+    "description": "Folk, acoustic, and Americana music",
+    "city": "Los Angeles",
+    "genre": "Folk",
+    "language": "English",
+    "website": "https://laurelcanyonradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/9907.v1.png",
+    "frequency": "Internet",
+    "tags": [
+      "folk",
+      "americana"
+    ],
+    "is_ai_generated": false,
+    "id": 158
+  },
+  {
+    "name": "Classic Country 98",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/blueridgeradio-wbrffmaac-hlsc4.m3u8",
+    "description": "Classic country music",
+    "city": "Galax",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://classiccountry98.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6606.v12.png",
+    "frequency": "98.1 FM",
+    "tags": [
+      "country",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 159
+  },
+  {
+    "name": "Beatles Radio",
+    "country": "USA",
+    "stream_url": "https://streaming.shoutcast.com/beatles-radio",
+    "description": "Music of the Beatles and related",
+    "city": "Los Angeles",
+    "genre": "Classic Rock",
+    "language": "English",
+    "website": "https://www.beatlesradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/9490.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "beatles",
+      "classic rock"
+    ],
+    "is_ai_generated": false,
+    "id": 160
+  },
+  {
+    "name": "Jazz24",
+    "country": "USA",
+    "stream_url": "https://live.amperwave.net/manifest/ppm-jazz24aac-hlsc1.m3u8",
+    "description": "Jazz music 24/7",
+    "city": "Seattle",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://www.jazz24.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/10936.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz"
+    ],
+    "is_ai_generated": false,
+    "id": 161
+  },
+  {
+    "name": "Houston Blues Radio",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/b76353_128mp3",
+    "description": "Local Houston blues artists",
+    "city": "Houston",
+    "genre": "Blues",
+    "language": "English",
+    "website": "https://houstonbluesradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/14935.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "blues"
+    ],
+    "is_ai_generated": false,
+    "id": 162
+  },
+  {
+    "name": "Viejitas Pero Bonitas Radio",
+    "country": "USA",
+    "stream_url": "https://stream.zeno.fm/k8yuexp35k0uv",
+    "description": "Latin oldies music",
+    "city": "Chicago",
+    "genre": "Latin",
+    "language": "Spanish",
+    "website": "https://viejitasperobonitasradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/44117.v8.png",
+    "frequency": "Internet",
+    "tags": [
+      "latin",
+      "oldies"
+    ],
+    "is_ai_generated": false,
+    "id": 163
+  },
+  {
+    "name": "011.FM - The Office Mix",
+    "country": "USA",
+    "stream_url": "https://listen.011fm.com/stream01",
+    "description": "Music mix for the office",
+    "city": "Tampa",
+    "genre": "Adult Contemporary",
+    "language": "English",
+    "website": "https://011fm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/67502.v7.png",
+    "frequency": "Internet",
+    "tags": [
+      "adult contemporary"
+    ],
+    "is_ai_generated": false,
+    "id": 164
+  },
+  {
+    "name": "Hard Rock Heaven",
+    "country": "USA",
+    "stream_url": "http://hydra.cdnstream.com/1521_128",
+    "description": "80s and 90s hard rock and hair metal",
+    "city": "Los Angeles",
+    "genre": "Hard Rock",
+    "language": "English",
+    "website": "https://hrhradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/53549.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "hard rock",
+      "80s",
+      "90s"
+    ],
+    "is_ai_generated": false,
+    "id": 165
+  },
+  {
+    "name": "Streetz 94.5",
+    "country": "USA",
+    "stream_url": "http://104.6.216.93:8000/Streetz",
+    "description": "Hip hop music",
+    "city": "Atlanta",
+    "genre": "Hip Hop",
+    "language": "English",
+    "website": "https://streetz945.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/39506.v8.png",
+    "frequency": "94.5 FM",
+    "tags": [
+      "hip hop"
+    ],
+    "is_ai_generated": false,
+    "id": 166
+  },
+  {
+    "name": "Radio Libre Orlando",
+    "country": "USA",
+    "stream_url": "https://radiopuramusica.out.airtime.pro/radiopuramusica_a",
+    "description": "Christian radio",
+    "city": "Orlando",
+    "genre": "Christian",
+    "language": "Spanish",
+    "website": "https://radiolibreorlando.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/70562.v40.png",
+    "frequency": "Internet",
+    "tags": [
+      "christian"
+    ],
+    "is_ai_generated": false,
+    "id": 167
+  },
+  {
+    "name": "Magic Oldies Florida",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a46209",
+    "description": "Oldies music from Florida",
+    "city": "Margate",
+    "genre": "Oldies",
+    "language": "English",
+    "website": "https://magicoldiesflorida.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/26836.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "oldies"
+    ],
+    "is_ai_generated": false,
+    "id": 168
+  },
+  {
+    "name": "Radio Paradise, Eureka",
+    "country": "USA",
+    "stream_url": "https://stream.radioparadise.com/mp3-192",
+    "description": "Eclectic music mix",
+    "city": "Eureka",
+    "genre": "Eclectic",
+    "language": "English",
+    "website": "https://radioparadise.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/10198.v14.png",
+    "frequency": "Internet",
+    "tags": [
+      "eclectic"
+    ],
+    "is_ai_generated": false,
+    "id": 169
+  },
+  {
+    "name": "Aardvark Blues FM",
+    "country": "USA",
+    "stream_url": "https://ais-sa5.cdnstream1.com/b77280_128mp3",
+    "description": "Blues music",
+    "city": "Houston",
+    "genre": "Blues",
+    "language": "English",
+    "website": "https://aardvarkbluesfm.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/14819.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "blues"
+    ],
+    "is_ai_generated": false,
+    "id": 170
+  },
+  {
+    "name": "Classic Hits 104.1",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WHTTFMAAC.aac",
+    "description": "Classic hits music",
+    "city": "Tallahassee",
+    "genre": "Classic Hits",
+    "language": "English",
+    "website": "https://classichits1041.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/25656.v3.png",
+    "frequency": "104.1 FM",
+    "tags": [
+      "classic hits"
+    ],
+    "is_ai_generated": false,
+    "id": 171
+  },
+  {
+    "name": "Smooth R&B 105.7",
+    "country": "USA",
+    "stream_url": "https://krnb.streamon.fm/KRNB-64k.aac?starttime=1503386167",
+    "description": "Smooth R&B music",
+    "city": "Decatur",
+    "genre": "R&B",
+    "language": "English",
+    "website": "https://smoothrb1057.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6122.v5.png",
+    "frequency": "105.7 FM",
+    "tags": [
+      "r&b",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 172
+  },
+  {
+    "name": "Hot 21 Radio",
+    "country": "USA",
+    "stream_url": "https://usa18.fastcast4u.com/proxy/cbardzin?mp=/1",
+    "description": "Hip hop and R&B",
+    "city": "New York",
+    "genre": "Hip Hop",
+    "language": "English",
+    "website": "https://hot21radio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/17330.v19.png",
+    "frequency": "Internet",
+    "tags": [
+      "hip hop",
+      "r&b"
+    ],
+    "is_ai_generated": false,
+    "id": 173
+  },
+  {
+    "name": "Beautiful Music 101",
+    "country": "USA",
+    "stream_url": "https://radio.streemlion.com:1665/stream?",
+    "description": "Easy listening instrumentals and vocals",
+    "city": "Los Angeles",
+    "genre": "Easy Listening",
+    "language": "English",
+    "website": "https://beautifulmusic101.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/10821.v5.png",
+    "frequency": "Internet",
+    "tags": [
+      "easy listening",
+      "instrumental"
+    ],
+    "is_ai_generated": false,
+    "id": 174
+  },
+  {
+    "name": "95.1 FM Chicago",
+    "country": "USA",
+    "stream_url": "https://ais-sa1.streamon.fm/7777_96k.aac",
+    "description": "R&B and gospel music",
+    "city": "Chicago",
+    "genre": "R&B",
+    "language": "English",
+    "website": "https://951fmchicago.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/90619.v7.png",
+    "frequency": "95.1 FM",
+    "tags": [
+      "r&b",
+      "gospel"
+    ],
+    "is_ai_generated": false,
+    "id": 175
+  },
+  {
+    "name": "Soft Rock Radio",
+    "country": "USA",
+    "stream_url": "https://gold.streamguys1.com/softrock.mp3",
+    "description": "Soft rock music",
+    "city": "Various",
+    "genre": "Soft Rock",
+    "language": "English",
+    "website": "https://softrockradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/43347.v8.png",
+    "frequency": "Internet",
+    "tags": [
+      "soft rock"
+    ],
+    "is_ai_generated": false,
+    "id": 176
+  },
+  {
+    "name": "Crossroad Family Radio",
+    "country": "USA",
+    "stream_url": "https://auds1.intacs.com/crossroadfamily",
+    "description": "Family radio with various music",
+    "city": "Brooklyn",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://crossroadfamilyradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/11874.v2.png",
+    "frequency": "105.5 FM",
+    "tags": [
+      "various",
+      "family"
+    ],
+    "is_ai_generated": false,
+    "id": 177
+  },
+  {
+    "name": "Megaton Cafe Radio",
+    "country": "USA",
+    "stream_url": "https://us2.internet-radio.com/proxy/megatoncafe?mp=/stream",
+    "description": "Retro music from 1920s to 1960s",
+    "city": "New York",
+    "genre": "Retro",
+    "language": "English",
+    "website": "https://megatoncaferadio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/43160.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "retro",
+      "oldies"
+    ],
+    "is_ai_generated": false,
+    "id": 178
+  },
+  {
+    "name": "SmoothJazz.NYC",
+    "country": "USA",
+    "stream_url": "http://airspectrum.cdnstream1.com:8078/1614_192",
+    "description": "Smooth jazz music",
+    "city": "New York",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://smoothjazz.nyc/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30838.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 179
+  },
+  {
+    "name": "Amazing 80s",
+    "country": "USA",
+    "stream_url": "https://stream.amazingradios.com/80s",
+    "description": "80s music",
+    "city": "Chicago",
+    "genre": "80s",
+    "language": "English",
+    "website": "https://amazingradios.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/13723.v14.png",
+    "frequency": "Internet",
+    "tags": [
+      "80s"
+    ],
+    "is_ai_generated": false,
+    "id": 180
+  },
+  {
+    "name": "USA Dance Radio",
+    "country": "USA",
+    "stream_url": "https://stream1.rcast.net/66781",
+    "description": "Dance music",
+    "city": "New York",
+    "genre": "Dance",
+    "language": "English",
+    "website": "https://usadanceradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30444.v8.png",
+    "frequency": "Internet",
+    "tags": [
+      "dance"
+    ],
+    "is_ai_generated": false,
+    "id": 181
+  },
+  {
+    "name": "American Road Radio",
+    "country": "USA",
+    "stream_url": "https://c5.radioboss.fm:18224/stream",
+    "description": "Country and Americana music",
+    "city": "Dallas",
+    "genre": "Country",
+    "language": "English",
+    "website": "https://americanroadradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/9549.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "country",
+      "americana"
+    ],
+    "is_ai_generated": false,
+    "id": 182
+  },
+  {
+    "name": "Big R Radio - 70s FM",
+    "country": "USA",
+    "stream_url": "https://bigrradio.cdnstream1.com/5182_128?listenerid=ea4ef9d7-dc2d-496b-9f18-5bbd5ca7923a&ampampcb=974096.mp3",
+    "description": "70s music",
+    "city": "Seattle",
+    "genre": "70s",
+    "language": "English",
+    "website": "https://bigrradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/31669.v3.png",
+    "frequency": "Internet",
+    "tags": [
+      "70s"
+    ],
+    "is_ai_generated": false,
+    "id": 183
+  },
+  {
+    "name": "Easy Hits Florida",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a80304",
+    "description": "Easy hits music",
+    "city": "Margate",
+    "genre": "Hits",
+    "language": "English",
+    "website": "https://easyhitsflorida.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/26834.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "hits",
+      "easy"
+    ],
+    "is_ai_generated": false,
+    "id": 184
+  },
+  {
+    "name": "Greatest Hits Radio USA",
+    "country": "USA",
+    "stream_url": "https://stream.radiojar.com/6pz06e8nv4zuv",
+    "description": "Greatest hits music",
+    "city": "New York",
+    "genre": "Hits",
+    "language": "English",
+    "website": "https://greatesthitsradio.us/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30537.v14.png",
+    "frequency": "Internet",
+    "tags": [
+      "hits"
+    ],
+    "is_ai_generated": false,
+    "id": 185
+  },
+  {
+    "name": "Smooth Jazz 247",
+    "country": "USA",
+    "stream_url": "https://jking.cdnstream1.com/b75154_128mp3",
+    "description": "Smooth jazz music 24/7",
+    "city": "New York",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://smoothjazz247.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/35215.v18.png",
+    "frequency": "Internet",
+    "tags": [
+      "jazz",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 186
+  },
+  {
+    "name": "WPVR NY Platinum Vibes Radio",
+    "country": "USA",
+    "stream_url": "https://streaming.live365.com/a20450",
+    "description": "Platinum vibes music",
+    "city": "New York",
+    "genre": "Various",
+    "language": "English",
+    "website": "https://wpvrny.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/89855.v10.png",
+    "frequency": "Internet",
+    "tags": [
+      "various"
+    ],
+    "is_ai_generated": false,
+    "id": 187
+  },
+  {
+    "name": "95.5 Smooth Jazz",
+    "country": "USA",
+    "stream_url": "https://login.webinternetradio.com/955smoothjazzradio",
+    "description": "Smooth jazz music",
+    "city": "New York",
+    "genre": "Jazz",
+    "language": "English",
+    "website": "https://955smoothjazz.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/50501.v26.png",
+    "frequency": "95.5 FM",
+    "tags": [
+      "jazz",
+      "smooth"
+    ],
+    "is_ai_generated": false,
+    "id": 188
+  },
+  {
+    "name": "Soft Classic Rock",
+    "country": "USA",
+    "stream_url": "https://fmradiohub.in/play?url=http://64.71.133.122:8000/",
+    "description": "Soft classic rock music",
+    "city": "Los Angeles",
+    "genre": "Rock",
+    "language": "English",
+    "website": "https://softclassicrock.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/33915.v4.png",
+    "frequency": "Internet",
+    "tags": [
+      "rock",
+      "soft",
+      "classic"
+    ],
+    "is_ai_generated": false,
+    "id": 189
+  },
+  {
+    "name": "NPR Radio",
+    "country": "USA",
+    "stream_url": "https://npr-ice.streamguys1.com/live.mp3",
+    "description": "Public radio news and talk",
+    "city": "Washington DC",
+    "genre": "News & Talk",
+    "language": "English",
+    "website": "https://www.npr.org/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/6233.v6.png",
+    "frequency": "Internet",
+    "tags": [
+      "news",
+      "talk",
+      "public"
+    ],
+    "is_ai_generated": false,
+    "id": 190
+  },
+  {
+    "name": "HardRadio.com - Hard Radio",
+    "country": "USA",
+    "stream_url": "http://144.217.29.205:80/",
+    "description": "Hard rock and metal music",
+    "city": "Dallas",
+    "genre": "Hard Rock",
+    "language": "English",
+    "website": "https://hardradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/14819.v2.png",
+    "frequency": "Internet",
+    "tags": [
+      "hard rock",
+      "metal"
+    ],
+    "is_ai_generated": false,
+    "id": 191
+  },
+  {
+    "name": "Bloomberg Radio",
+    "country": "USA",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WBBRAMAAC.aac",
+    "description": "Business and financial news",
+    "city": "New York",
+    "genre": "News",
+    "language": "English",
+    "website": "https://www.bloombergradio.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/30480.v12.png",
+    "frequency": "1130 AM",
+    "tags": [
+      "news",
+      "business"
+    ],
+    "is_ai_generated": false,
+    "id": 192
+  },
+  {
+    "name": "1000 HITS 80s",
+    "country": "USA",
+    "stream_url": "https://ais-sa9.cdnstream1.com/1898_128",
+    "description": "80s hits music",
+    "city": "San Francisco",
+    "genre": "80s",
+    "language": "English",
+    "website": "https://1000hits80s.com/",
+    "image_url": "https://radiostationslive.com/uploads/2024/01/63108.v12.png",
+    "frequency": "Internet",
+    "tags": [
+      "80s",
+      "hits"
+    ],
+    "is_ai_generated": false,
+    "id": 193
   }
 ]
