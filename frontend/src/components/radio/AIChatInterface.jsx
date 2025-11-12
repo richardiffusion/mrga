@@ -85,9 +85,21 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
     document.addEventListener('touchend', handleTouchEnd);
   }, [chatHeight]);
 
+  // 修复 API 基础 URL 配置
+  const getApiBaseUrl = () => {
+    // 开发环境
+    if (import.meta.env.DEV) {
+      return 'http://localhost:8000';
+    }
+    // 生产环境 - 使用相对路径
+    return '';
+  };
+
+  const API_BASE_URL = getApiBaseUrl();
+
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
-
+  
     const userMessage = input.trim();
     setInput('');
     setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
@@ -95,13 +107,18 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
     setStreamingMessage('');
     setIsExpanded(true);
     
-    // 通知父组件 AI 请求开始
     if (onRequestStart) {
       onRequestStart();
     }
-
+  
     try {
-      const response = await fetch('http://localhost:8000/api/ai/chat-stream', {
+      const apiUrl = import.meta.env.DEV 
+        ? `${API_BASE_URL}/api/ai/chat-stream`
+        : '/mrga/api/ai/chat-stream';
+  
+      console.log('Making AI stream request to:', apiUrl);
+  
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,24 +128,45 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
           provider: aiProvider
         })
       });
-
+  
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        const errorText = await response.text();
+        throw new Error(`HTTP error! status: ${response.status}, details: ${errorText}`);
       }
-
+  
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let fullResponse = '';
-
+      let displayedText = '';
+  
+      // 改进的流式显示：模拟逐字显示效果
       while (true) {
         const { done, value } = await reader.read();
+        
         if (done) break;
-
+  
         const chunk = decoder.decode(value, { stream: true });
         fullResponse += chunk;
-        setStreamingMessage(fullResponse);
+        
+        
+        // 每2个字符更新一次，减少更新频率
+        const updateInterval = 2;
+        // 模拟逐字显示，提供更好的用户体验
+        for (let i = displayedText.length; i < fullResponse.length; i += updateInterval) {
+          const endIndex = Math.min(i + updateInterval, fullResponse.length);
+          displayedText = fullResponse.substring(0, endIndex);
+          setStreamingMessage(displayedText);
+          await new Promise(resolve => setTimeout(resolve, 10)); // 减少延迟到5ms
+        }
+        
+        // 确保最后完全显示
+        if (displayedText.length < fullResponse.length) {
+          displayedText = fullResponse;
+          setStreamingMessage(displayedText);
+        }
       }
-
+  
+      // 处理最终结果
       const responseParts = fullResponse.split('RECOMMENDED_STATIONS:');
       const aiMessage = responseParts[0].trim();
       
@@ -142,7 +180,7 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
           )
         );
       }
-
+  
       setMessages(prev => [...prev, { 
         role: 'assistant', 
         content: aiMessage,
@@ -152,7 +190,7 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
       if (recommendedStations.length > 0) {
         onStationsRecommended(recommendedStations);
       }
-
+  
     } catch (error) {
       console.error('AI stream request failed:', error);
       setMessages(prev => [...prev, { 
@@ -164,7 +202,7 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
       setStreamingMessage('');
     }
   };
-
+    
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();

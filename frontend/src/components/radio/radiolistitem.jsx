@@ -4,15 +4,28 @@ import { Badge } from '@/components/ui/badge';
 import { Play, Pause, Radio, MapPin, Globe, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
-
-
-export default function RadioListItem({ station, onPlay, isPlaying }) {
+export default function RadioListItem({ station, onPlay, isPlaying, onShowDetail, currentStation }) {
   const [imageError, setImageError] = useState(false);
 
+  const handlePlayClick = (e) => {
+    e.stopPropagation(); // 阻止事件冒泡，避免触发 onShowDetail
+    onPlay(station);
+  };
+
+  const handleItemClick = () => {
+    onShowDetail?.(station);
+  };
+
+  // 检查这个电台是否正在播放
+  const isThisStationPlaying = currentStation && currentStation.id === station.id && isPlaying;
+
   return (
-    <div className={`flex items-center gap-4 p-3 rounded-lg border transition-all hover:shadow-md hover:border-purple-300 ${
-      isPlaying ? 'bg-purple-50 border-purple-400' : 'bg-white border-gray-200'
-    }`}>
+    <div 
+      className={`flex items-center gap-4 p-3 rounded-lg border transition-all hover:shadow-md hover:border-purple-300 cursor-pointer ${
+        isThisStationPlaying ? 'bg-purple-50 border-purple-400' : 'bg-white border-gray-200'
+      }`}
+      onClick={handleItemClick}
+    >
       <div className="relative flex-shrink-0">
         {station.image_url && !imageError ? (
           <img
@@ -26,7 +39,7 @@ export default function RadioListItem({ station, onPlay, isPlaying }) {
             <Radio className="w-6 h-6 text-white" />
           </div>
         )}
-        {isPlaying && (
+        {isThisStationPlaying && (
           <div className="absolute -top-1 -right-1">
             <span className="flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -66,15 +79,15 @@ export default function RadioListItem({ station, onPlay, isPlaying }) {
           {station.genre}
         </Badge>
         <Button
-          onClick={() => onPlay(station)}
+          onClick={handlePlayClick}
           size="sm"
           className={`${
-            isPlaying
+            isThisStationPlaying
               ? 'bg-gradient-to-r from-purple-500 to-blue-500'
               : 'bg-gray-900 hover:bg-gray-800'
           }`}
         >
-          {isPlaying ? (
+          {isThisStationPlaying ? (
             <Pause className="w-4 h-4 fill-current" />
           ) : (
             <Play className="w-4 h-4 fill-current" />

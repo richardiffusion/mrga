@@ -5,8 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Play, Radio, MapPin, Globe, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
-export default function RadioCard({ station, onPlay, isPlaying }) {
+export default function RadioCard({ station, onPlay, isPlaying, currentStation }) {
   const [imageError, setImageError] = useState(false);
+
+  // 检查这个电台是否正在播放
+  const isThisStationPlaying = currentStation && currentStation.id === station.id && isPlaying;
 
   return (
     <Card className={`overflow-hidden group cursor-pointer transition-all duration-300 outline-none ${
@@ -32,8 +35,11 @@ export default function RadioCard({ station, onPlay, isPlaying }) {
         {/* 修复播放按钮覆盖层 */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30 rounded-t-lg">
           <Button
-            onClick={() => onPlay(station)}
-            className="rounded-full w-16 h-16 bg-white/90 hover:bg-white text-purple-600 shadow-2xl transition-all duration-300 transform group-hover:scale-100 scale-90 flex items-center justify-center p-0" // 添加 p-0 来移除内边距，并使用 flex 居中
+            onClick={(e) => {
+              e.stopPropagation(); // 阻止事件冒泡
+              onPlay(station);
+            }}
+            className="rounded-full w-16 h-16 bg-white/90 hover:bg-white text-purple-600 shadow-2xl transition-all duration-300 transform group-hover:scale-100 scale-90 flex items-center justify-center p-0"
           >
             <Play className="w-8 h-8 fill-current" />
           </Button>
@@ -94,16 +100,22 @@ export default function RadioCard({ station, onPlay, isPlaying }) {
           </div>
         )}
 
+        {/* // 在播放按钮的 onClick 中添加事件阻止冒泡 */}
+        {/* // 播放按钮文本和状态 */}
+        {/* // 在播放按钮中使用 isThisStationPlaying */}
         <Button
-          onClick={() => onPlay(station)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onPlay(station);
+          }}
           className={`w-full outline-none focus:outline-none ${
-            isPlaying 
+            isThisStationPlaying
               ? 'bg-gradient-to-r from-purple-500 to-blue-500' 
               : 'bg-gray-900 hover:bg-gray-800'
           }`}
         >
           <Play className="w-4 h-4 mr-2" />
-          {isPlaying ? 'Now Playing' : 'Play Station'}
+          {isThisStationPlaying ? 'Now Playing' : 'Play Station'}
         </Button>
       </CardContent>
     </Card>

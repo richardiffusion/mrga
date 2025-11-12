@@ -12,10 +12,13 @@ export default function RadioPlayer({ station, onClose }) {
   const [isLoading, setIsLoading] = useState(false);
   const [imageError, setImageError] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const [retryCount, setRetryCount] = useState(0); // 新增：重试次数计数
+  const maxRetries = 3; // 最大重试次数
 
   useEffect(() => {
     if (station && audioRef.current) {
       setHasError(false);
+      setRetryCount(0); // 重置重试计数
       audioRef.current.src = station.stream_url;
       audioRef.current.volume = volume / 100;
       
@@ -28,6 +31,7 @@ export default function RadioPlayer({ station, onClose }) {
         } catch (error) {
           console.error('Error playing audio:', error);
           setHasError(true);
+          setRetryCount(prev => prev + 1); // 增加重试计数
         } finally {
           setIsLoading(false);
         }
@@ -46,8 +50,8 @@ export default function RadioPlayer({ station, onClose }) {
   const handlePlayPause = async () => {
     if (!audioRef.current) return;
 
-    // If there's an error, try to reload
-    if (hasError) {
+    // 如果有错误且未超过最大重试次数，尝试重新加载
+    if (hasError && retryCount < maxRetries) {
       setHasError(false);
       setIsLoading(true);
       try {
@@ -55,12 +59,20 @@ export default function RadioPlayer({ station, onClose }) {
         await audioRef.current.play();
         setIsPlaying(true);
         setHasError(false);
+        setRetryCount(0); // 重置重试计数
       } catch (error) {
         console.error('Error playing audio:', error);
         setHasError(true);
+        setRetryCount(prev => prev + 1); // 增加重试计数
       } finally {
         setIsLoading(false);
       }
+      return;
+    }
+
+    // 如果超过最大重试次数，不再尝试播放
+    if (hasError && retryCount >= maxRetries) {
+      console.log('Max retries reached, giving up');
       return;
     }
 
@@ -76,6 +88,7 @@ export default function RadioPlayer({ station, onClose }) {
       } catch (error) {
         console.error('Error playing audio:', error);
         setHasError(true);
+        setRetryCount(prev => prev + 1); // 增加重试计数
       } finally {
         setIsLoading(false);
       }
@@ -86,6 +99,38 @@ export default function RadioPlayer({ station, onClose }) {
     setIsMuted(!isMuted);
   };
 
+  // 添加音频错误监听器，防止无限重试
+  useEffect(() => {
+    const audioElement = audioRef.current;
+    
+    const handleAudioError = () => {
+      console.log('Audio element error event triggered');
+      setHasError(true);
+      setIsPlaying(false);
+      setIsLoading(false);
+      
+      // 当音频元素本身报错时，也增加重试计数
+      setRetryCount(prev => {
+        const newCount = prev + 1;
+        console.log(`Retry count increased to: ${newCount}`);
+        return newCount;
+      });
+    };
+
+    if (audioElement) {
+      audioElement.addEventListener('error', handleAudioError);
+    }
+
+    return () => {
+      if (audioElement) {
+        audioElement.removeEventListener('error', handleAudioError);
+      }
+    };
+  }, []);
+
+  // 当重试次数达到最大值时，禁用播放按钮
+  const isPlayButtonDisabled = hasError && retryCount >= maxRetries;
+
   if (!station) return null;
 
   return (
@@ -94,6 +139,7 @@ export default function RadioPlayer({ station, onClose }) {
         <CardContent className="p-4 md:p-6">
           <audio
             ref={audioRef}
+            preload="none" // 添加 preload="none" 避免自动加载
             onLoadStart={() => setIsLoading(true)}
             onCanPlay={() => setIsLoading(false)}
             onError={() => {
@@ -140,9 +186,13 @@ export default function RadioPlayer({ station, onClose }) {
                 <p className="text-xs md:text-sm text-white/70 truncate">
                   {station.city ? `${station.city}, ` : ''}{station.country} • {station.genre}
                 </p>
-                {/* Status message */}
+                {/* 改进的状态消息 */}
                 {hasError && (
-                  <p className="text-xs text-red-400 mt-1">Playback failed, click to retry</p>
+                  <p className="text-xs text-red-400 mt-1">
+                    {retryCount >= maxRetries 
+                      ? 'Station unavailable. Please try another station.' 
+                      : `Playback failed (${retryCount}/${maxRetries} retries), click to retry`}
+                  </p>
                 )}
                 {isLoading && (
                   <p className="text-xs text-yellow-400 mt-1">Loading...</p>
@@ -153,20 +203,24 @@ export default function RadioPlayer({ station, onClose }) {
             <div className="flex items-center gap-3 flex-shrink-0">
               <Button
                 onClick={handlePlayPause}
-                size="lg"
-                disabled={isLoading && !hasError} // Don't disable when there's an error, allow retry
+                disabled={isLoading || isPlayButtonDisabled} // 超过重试次数时禁用
                 className={`rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center ${
                   hasError 
-                    ? 'bg-red-500 hover:bg-red-600 text-white' 
+                    ? retryCount >= maxRetries 
+                      ? 'bg-gray-500 cursor-not-allowed' // 超过重试次数时的样式
+                      : 'bg-red-500 hover:bg-red-600 text-white' 
                     : 'bg-white hover:bg-white/90 text-purple-600'
                 }`}
               >
                 {isLoading ? (
                   // Loading state
                   <div className="w-5 h-5 md:w-6 md:h-6 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                ) : hasError ? (
+                ) : hasError && retryCount < maxRetries ? (
                   // Error state - show retry icon
                   <RefreshCw className="w-5 h-5 md:w-6 md:h-6" />
+                ) : hasError && retryCount >= maxRetries ? (
+                  // Max retries reached - show disabled icon
+                  <X className="w-5 h-5 md:w-6 md:h-6" />
                 ) : isPlaying ? (
                   // Playing state - show pause icon
                   <span className="text-lg font-bold">❚❚</span>

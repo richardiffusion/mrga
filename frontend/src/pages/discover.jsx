@@ -10,10 +10,11 @@ import {
   SelectTrigger, 
   SelectValue 
 } from '@/components/ui/select';
-import { Radio, Search, Globe, Sparkles, Music, TrendingUp, Filter, Loader2, Flame } from 'lucide-react';
+import { Radio, Search, Globe, Sparkles, Music, TrendingUp, Filter, Loader2, Flame, CheckCircle } from 'lucide-react';
 import AIChatInterface from '@/components/radio/AIChatInterface';
 import RadioListItem from '@/components/radio/radiolistItem';
 import RadioPlayer from '@/components/radio/radioplayer';
+import RadioCard from '@/components/radio/radiocard'; // 添加这一行
 
 export default function Discover() {
   const [currentStation, setCurrentStation] = useState(null);
@@ -25,12 +26,21 @@ export default function Discover() {
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [trendingStations, setTrendingStations] = useState([]);
   
-  // 简化的分批加载状态 - 使用 useRef 避免重新渲染循环
+  // 分批加载状态
   const [displayedStations, setDisplayedStations] = useState([]);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
   const currentPageRef = useRef(0);
   const observerTarget = useRef(null);
   const pageSize = 30;
+  
+  // 在现有的状态后面添加：
+  const [selectedStationForDetail, setSelectedStationForDetail] = useState(null);
+  const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
+
+  // 在现有的状态后面添加：
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const { data: stations = [], isLoading } = useQuery({
     queryKey: ['radioStations'],
@@ -38,10 +48,16 @@ export default function Discover() {
     initialData: [],
   });
 
-  const genres = [...new Set(stations.map(s => s.genre))].sort();
+  // 替换genres的方法：
+  const genres = [...new Set(stations.map(s => {
+    if (!s.genre) return 'Unknown';
+    // 如果有逗号，只取第一个词
+    const firstGenre = s.genre.split(',')[0].trim();
+    return firstGenre;
+  }))].sort();
   const countries = [...new Set(stations.map(s => s.country))].sort();
 
-  // 使用 useMemo 优化过滤计算，避免不必要的重新计算
+  // 使用 useMemo 优化过滤计算
   const filteredStations = useMemo(() => {
     return stations.filter(station => {
       if (!searchQuery && selectedGenre === 'all' && selectedCountry === 'all') {
@@ -62,7 +78,9 @@ export default function Discover() {
           tag.toLowerCase().includes(searchLower)
         ));
       
-      const matchesGenre = selectedGenre === 'all' || station.genre === selectedGenre;
+      // 替换为：
+      const matchesGenre = selectedGenre === 'all' || 
+        (station.genre ? station.genre.split(',')[0].trim() : 'Unknown') === selectedGenre;
       const matchesCountry = selectedCountry === 'all' || station.country === selectedCountry;
       
       return matchesSearch && matchesGenre && matchesCountry;
@@ -84,15 +102,11 @@ export default function Discover() {
     const initialStations = filteredStations.slice(0, pageSize);
     setDisplayedStations(initialStations);
     currentPageRef.current = 0;
-  }, [filteredStations]); // 只在 filteredStations 变化时重置
+    setHasLoadedOnce(false);
+    setHasMore(initialStations.length < filteredStations.length);
+  }, [filteredStations]);
 
-  // 计算是否还有更多数据
-  const hasMore = useMemo(() => {
-    const totalDisplayed = (currentPageRef.current + 1) * pageSize;
-    return totalDisplayed < filteredStations.length;
-  }, [filteredStations.length]);
-
-  // 加载更多电台的稳定函数
+  // 加载更多电台
   const loadMoreStations = () => {
     if (isLoadingMore || !hasMore) {
       console.log('Cannot load more: isLoadingMore=', isLoadingMore, 'hasMore=', hasMore);
@@ -102,7 +116,6 @@ export default function Discover() {
     console.log('Loading more stations, current page:', currentPageRef.current);
     setIsLoadingMore(true);
     
-    // 使用 setTimeout 确保状态更新不会批处理
     setTimeout(() => {
       const nextPage = currentPageRef.current + 1;
       const startIndex = nextPage * pageSize;
@@ -119,17 +132,31 @@ export default function Discover() {
         });
         currentPageRef.current = nextPage;
         console.log('Page updated to:', nextPage);
+        
+        // 更新 hasMore 状态
+        const nextStartIndex = (nextPage + 1) * pageSize;
+        const hasMoreData = nextStartIndex < filteredStations.length;
+        setHasMore(hasMoreData);
+        console.log('Has more data after load:', hasMoreData);
+        
+        if (!hasLoadedOnce) {
+          setHasLoadedOnce(true);
+        }
+      } else {
+        // 如果没有加载到任何数据，说明没有更多了
+        setHasMore(false);
+        console.log('No more stations to load');
       }
       
       setIsLoadingMore(false);
     }, 100);
   };
 
-  // 简化的 Intersection Observer - 只在必要依赖变化时重新创建
-  useEffect(() => {
-    if (!observerTarget.current || !hasMore) return;
+  // 使用 useLayoutEffect 设置 Observer
+  React.useLayoutEffect(() => {
+    if (!observerTarget.current || !hasMore || !hasLoadedOnce) return;
     
-    console.log('Setting up Intersection Observer');
+    console.log('Setting up Intersection Observer with useLayoutEffect');
     
     const observer = new IntersectionObserver(
       (entries) => {
@@ -153,7 +180,7 @@ export default function Discover() {
         observer.unobserve(currentTarget);
       }
     };
-  }, [hasMore, isLoadingMore]); // 只在 hasMore 和 isLoadingMore 变化时重新创建
+  }, [hasMore, isLoadingMore, hasLoadedOnce]);
 
   const handleStationsRecommended = (recommended) => {
     setAiRecommendedStations(recommended);
@@ -169,7 +196,25 @@ export default function Discover() {
   };
 
   const handlePlayStation = (station) => {
-    setCurrentStation(station);
+    // 如果是同一个电台，切换播放/暂停状态
+    if (currentStation && currentStation.id === station.id) {
+      setIsPlaying(!isPlaying);
+    } else {
+      // 如果是不同的电台，设置新电台并开始播放
+      setCurrentStation(station);
+      setIsPlaying(true);
+    }
+  };
+
+    // 在现有的处理函数后面添加：
+  const handleShowStationDetail = (station) => {
+    setSelectedStationForDetail(station);
+    setIsDetailModalOpen(true);
+  };
+
+  const handleCloseDetailModal = () => {
+    setIsDetailModalOpen(false);
+    setSelectedStationForDetail(null);
   };
 
   // 刷新热门电台
@@ -188,19 +233,19 @@ export default function Discover() {
           <div className="absolute -bottom-1/2 -right-1/4 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl opacity-50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-12 md:py-20">
-          <div className="text-center mb-12">
+        <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-12">
+          <div className="text-center mb-5">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Radio className="w-12 h-12" />
-              <h1 className="text-4xl md:text-6xl font-bold">
+              <Radio className="w-10 h-10" />
+              <h1 className="text-3xl md:text-5xl font-bold">
                 MR<span className="text-yellow-300">GA</span>
               </h1>
             </div>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
               Discover radio stations from around the world with AI-powered recommendations.
               Make Radio Great Again!
             </p>
-            <div className="flex items-center justify-center gap-6 mt-6 text-sm flex-wrap">
+            <div className="flex items-center justify-center gap-4 mt-4 text-sm flex-wrap">
               <div className="flex items-center gap-2">
                 <Globe className="w-4 h-4" />
                 <span>{stations.length} Stations</span>
@@ -271,11 +316,14 @@ export default function Discover() {
                   ) : aiRecommendedStations.length > 0 ? (
                     <div className="space-y-2">
                       {aiRecommendedStations.map((station) => (
+                        // 在 AI 推荐电台部分：
                         <RadioListItem
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          isPlaying={currentStation?.id === station.id}
+                          onShowDetail={handleShowStationDetail}  // 添加这一行
+                          isPlaying={isPlaying} // 传递全局播放状态
+                          currentStation={currentStation} // 传递当前播放的电台
                         />
                       ))}
                     </div>
@@ -323,7 +371,9 @@ export default function Discover() {
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          isPlaying={currentStation?.id === station.id}
+                          onShowDetail={handleShowStationDetail}  // 添加这一行
+                          isPlaying={isPlaying} // 传递全局播放状态
+                          currentStation={currentStation} // 传递当前播放的电台
                         />
                       ))}
                     </div>
@@ -424,7 +474,9 @@ export default function Discover() {
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          isPlaying={currentStation?.id === station.id}
+                          onShowDetail={handleShowStationDetail}  // 添加这一行
+                          isPlaying={isPlaying} // 传递全局播放状态
+                          currentStation={currentStation} // 传递当前播放的电台
                         />
                       ))}
                     </div>
@@ -432,47 +484,81 @@ export default function Discover() {
                     {/* 无限滚动观察目标和加载指示器 */}
                     {hasMore && (
                       <>
-                        <div 
-                          ref={observerTarget} 
-                          className="flex justify-center py-6"
-                          style={{ minHeight: '50px' }}
-                        >
-                          <div className="flex items-center gap-2 text-gray-500">
-                            {isLoadingMore && <Loader2 className="w-5 h-5 animate-spin" />}
-                            <span>
-                              {isLoadingMore 
-                                ? 'Loading more stations...' 
-                                : 'Click and Scroll to load more stations'}
-                            </span>
+                        {/* 手动加载按钮 - 重新设计位置和样式 */}
+                        {!hasLoadedOnce && (
+                          <div className="text-center py-8 mt-8 border-t border-gray-200">
+                            <div className="mb-4">
+                              <p className="text-gray-600 mb-2">
+                              </p>
+                              <Button
+                                onClick={loadMoreStations}
+                                disabled={isLoadingMore}
+                                className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 px-8 py-3 text-sm"
+                                size="sm"
+                              >
+                                {isLoadingMore ? (
+                                  <>
+                                    <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                                    Loading...
+                                  </>
+                                ) : (
+                                  `Load More Stations (${Math.max(pageSize, filteredStations.length - displayedStations.length)} available)`
+                                )}
+                              </Button>
+                            </div>
+                            <p className="text-xs text-gray-500">
+                              After first load, scrolling will automatically load more stations
+                            </p>
                           </div>
-                        </div>
+                        )}
                         
-                        {/* 手动加载按钮 */}
-                        <div className="text-center py-4 border-t border-gray-100">
-                          <Button
-                            onClick={loadMoreStations}
-                            disabled={isLoadingMore || !hasMore}
-                            variant="outline"
-                            className="text-sm"
+                        {/* 自动加载指示器 - 只在第一次加载后显示 */}
+                        {hasLoadedOnce && (
+                          <div 
+                            ref={observerTarget} 
+                            className="flex justify-center py-12 mt-8"
+                            style={{ minHeight: '80px' }}
                           >
-                            {isLoadingMore ? (
-                              <>
-                                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                                Loading...
-                              </>
-                            ) : (
-                              `Load More Stations (${Math.max(pageSize, filteredStations.length - displayedStations.length)} available)`
-                            )}
-                          </Button>
-                        </div>
+                            <div className="flex flex-col items-center gap-2 text-gray-500">
+                              {isLoadingMore && <Loader2 className="w-6 h-6 animate-spin" />}
+                              <span className="text-sm">
+                                {isLoadingMore 
+                                  ? 'Loading more stations...' 
+                                  : 'Scroll down to load more stations'}
+                              </span>
+                            </div>
+                          </div>
+                        )}
                       </>
                     )}
                     
+                    {/* 加载完成后的显示 */}
                     {!hasMore && displayedStations.length > 0 && (
-                      <div className="text-center py-6 border-t border-gray-100">
-                        <p className="text-gray-500">
-                          You've reached the end! All {displayedStations.length} stations loaded.
-                        </p>
+                      <div className="text-center py-12 mt-8 border-t border-gray-200">
+                        <div className="flex flex-col items-center justify-center">
+                          <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
+                          <h4 className="text-xl font-semibold text-gray-900 mb-3">
+                            All Stations Loaded
+                          </h4>
+                          <p className="text-gray-600 mb-4 max-w-md">
+                            You've discovered all {displayedStations.length} stations that match your criteria.
+                          </p>
+                          <div className="flex gap-6 text-sm text-gray-500 mb-4">
+                            <div className="flex items-center gap-1">
+                              <Music className="w-4 h-4" />
+                              <span>{new Set(displayedStations.map(s => s.genre)).size} genres</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Globe className="w-4 h-4" />
+                              <span>{new Set(displayedStations.map(s => s.country)).size} countries</span>
+                            </div>
+                          </div>
+                          {displayedStations.length < stations.length && (
+                            <p className="text-xs text-gray-400">
+                              {stations.length - displayedStations.length} stations hidden by your filters
+                            </p>
+                          )}
+                        </div>
                       </div>
                     )}
                   </>
@@ -483,13 +569,50 @@ export default function Discover() {
         </div>
       </div>
 
-      {/* RadioPlayer */}
+      {/* RadioPlayer - 添加底部间距确保内容不被遮挡 */}
       {currentStation && (
-        <RadioPlayer
-          station={currentStation}
-          onClose={() => setCurrentStation(null)}
-        />
+        <div className="pb-24">
+          <RadioPlayer
+            station={currentStation}
+            isPlaying={isPlaying} // 传递播放状态
+            onPlayPause={() => setIsPlaying(!isPlaying)} // 添加播放/暂停回调
+            onClose={() => {
+              setCurrentStation(null);
+              setIsPlaying(false);
+            }}
+          />
+        </div>
       )}
+
+      {/* 电台详情模态框 */}
+      {isDetailModalOpen && selectedStationForDetail && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={handleCloseDetailModal}
+        >
+          <div 
+            className="relative max-w-2xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Button
+              onClick={handleCloseDetailModal}
+              className="absolute -top-12 right-0 text-white hover:text-gray-200 z-10"
+              variant="ghost"
+              size="sm"
+            >
+              ✕ Close
+            </Button>
+            <RadioCard
+              station={selectedStationForDetail}
+              onPlay={handlePlayStation}
+              isPlaying={isPlaying}
+              currentStation={currentStation} // 传递当前播放的电台
+            />
+          </div>
+        </div>
+      )}
+
+
     </div>
   );
 }
