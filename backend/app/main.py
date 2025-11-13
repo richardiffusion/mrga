@@ -181,7 +181,7 @@ RECOMMENDED_STATIONS: BBC Radio 1, KEXP 90.3 FM, Radio Paradise\""""
 # Add streaming endpoint after existing AI chat endpoint
 @app.post("/api/ai/chat-stream")
 async def ai_chat_stream(request: AIChatRequest):
-    """Streaming AI chat to recommend radio stations"""
+    """Real streaming AI chat for recommending radio stations"""
     try:
         print(f"Received AI chat stream request: provider={request.provider}, prompt_length={len(request.prompt)}")
         
@@ -215,13 +215,21 @@ RECOMMENDED_STATIONS: BBC Radio 1, KEXP 90.3 FM, Radio Paradise\""""
             print("Using OpenAI provider for stream...")
             return StreamingResponse(
                 ai_service.call_openai_stream(full_prompt),
-                media_type="text/plain"
+                media_type="text/event-stream",
+                headers={
+                    'Cache-Control': 'no-cache',
+                    'Connection': 'keep-alive',
+                }
             )
         elif request.provider == "deepseek":
             print("Using DeepSeek provider for stream...")
             return StreamingResponse(
                 ai_service.call_deepseek_stream(full_prompt),
-                media_type="text/plain"
+                media_type="text/event-stream",
+                headers={
+                    'Cache-Control': 'no-cache',
+                    'Connection': 'keep-alive',
+                }
             )
         else:
             raise HTTPException(status_code=400, detail="Unsupported AI provider")
@@ -229,9 +237,14 @@ RECOMMENDED_STATIONS: BBC Radio 1, KEXP 90.3 FM, Radio Paradise\""""
     except Exception as e:
         error_msg = f"AI service error: {str(e)}"
         print(f"ERROR: {error_msg}")
-        raise HTTPException(status_code=500, detail=error_msg)
-    
-
+        
+        async def error_stream():
+            yield "data: " + json.dumps({"error": error_msg}) + "\n\n"
+        
+        return StreamingResponse(
+            error_stream(),
+            media_type="text/event-stream"
+        )
 
 @app.get("/api/health")
 async def health_check():

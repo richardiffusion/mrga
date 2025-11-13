@@ -39,8 +39,17 @@ export default function Discover() {
   const [selectedStationForDetail, setSelectedStationForDetail] = useState(null);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
 
-  // 在现有的状态后面添加：
-  const [isPlaying, setIsPlaying] = useState(false);
+  // // 修改播放状态管理，确保每个电台有独立的状态
+  // const [playingStates, setPlayingStates] = useState({});
+
+  // // 在现有的状态后面添加：
+  // const [isPlaying, setIsPlaying] = useState(false);
+
+  // 替换为统一的状态管理：
+  const [playbackState, setPlaybackState] = useState({
+    currentStation: null,
+    isPlaying: false
+  });
 
   const { data: stations = [], isLoading } = useQuery({
     queryKey: ['radioStations'],
@@ -196,14 +205,29 @@ export default function Discover() {
   };
 
   const handlePlayStation = (station) => {
+    const stationId = station.id;
+    
     // 如果是同一个电台，切换播放/暂停状态
-    if (currentStation && currentStation.id === station.id) {
-      setIsPlaying(!isPlaying);
+    if (playbackState.currentStation && playbackState.currentStation.id === stationId) {
+      setPlaybackState(prev => ({
+        ...prev,
+        isPlaying: !prev.isPlaying
+      }));
     } else {
       // 如果是不同的电台，设置新电台并开始播放
-      setCurrentStation(station);
-      setIsPlaying(true);
+      setPlaybackState({
+        currentStation: station,
+        isPlaying: true
+      });
     }
+  };
+
+  // 添加播放/暂停切换函数
+  const handlePlayPause = () => {
+    setPlaybackState(prev => ({
+      ...prev,
+      isPlaying: !prev.isPlaying
+    }));
   };
 
     // 在现有的处理函数后面添加：
@@ -321,9 +345,9 @@ export default function Discover() {
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          onShowDetail={handleShowStationDetail}  // 添加这一行
-                          isPlaying={isPlaying} // 传递全局播放状态
-                          currentStation={currentStation} // 传递当前播放的电台
+                          onShowDetail={handleShowStationDetail}
+                          isPlaying={playbackState.currentStation?.id === station.id && playbackState.isPlaying}
+                          currentStation={playbackState.currentStation}
                         />
                       ))}
                     </div>
@@ -371,9 +395,9 @@ export default function Discover() {
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          onShowDetail={handleShowStationDetail}  // 添加这一行
-                          isPlaying={isPlaying} // 传递全局播放状态
-                          currentStation={currentStation} // 传递当前播放的电台
+                          onShowDetail={handleShowStationDetail}
+                          isPlaying={playbackState.currentStation?.id === station.id && playbackState.isPlaying}
+                          currentStation={playbackState.currentStation}
                         />
                       ))}
                     </div>
@@ -474,9 +498,9 @@ export default function Discover() {
                           key={station.id}
                           station={station}
                           onPlay={handlePlayStation}
-                          onShowDetail={handleShowStationDetail}  // 添加这一行
-                          isPlaying={isPlaying} // 传递全局播放状态
-                          currentStation={currentStation} // 传递当前播放的电台
+                          onShowDetail={handleShowStationDetail}
+                          isPlaying={playbackState.currentStation?.id === station.id && playbackState.isPlaying}
+                          currentStation={playbackState.currentStation}
                         />
                       ))}
                     </div>
@@ -570,15 +594,17 @@ export default function Discover() {
       </div>
 
       {/* RadioPlayer - 添加底部间距确保内容不被遮挡 */}
-      {currentStation && (
+      {playbackState.currentStation && (
         <div className="pb-24">
           <RadioPlayer
-            station={currentStation}
-            isPlaying={isPlaying} // 传递播放状态
-            onPlayPause={() => setIsPlaying(!isPlaying)} // 添加播放/暂停回调
+            station={playbackState.currentStation}
+            isPlaying={playbackState.isPlaying}
+            onPlayPause={handlePlayPause}
             onClose={() => {
-              setCurrentStation(null);
-              setIsPlaying(false);
+              setPlaybackState({
+                currentStation: null,
+                isPlaying: false
+              });
             }}
           />
         </div>
@@ -605,8 +631,8 @@ export default function Discover() {
             <RadioCard
               station={selectedStationForDetail}
               onPlay={handlePlayStation}
-              isPlaying={isPlaying}
-              currentStation={currentStation} // 传递当前播放的电台
+              isPlaying={playbackState.currentStation?.id === selectedStationForDetail.id && playbackState.isPlaying}
+              currentStation={playbackState.currentStation}
             />
           </div>
         </div>

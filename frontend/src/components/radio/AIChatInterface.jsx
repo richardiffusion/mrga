@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
 import { Send, Sparkles, Loader2, Settings, ChevronDown, ChevronUp, GripHorizontal } from 'lucide-react';
+import { MarkdownRenderer } from '@/components/ui/markdown'; // 新增导入
 
 export default function AIChatInterface({ onStationsRecommended, onRequestStart, allStations }) {
   const [messages, setMessages] = useState([
@@ -99,7 +100,7 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
-  
+
     const userMessage = input.trim();
     setInput('');
     setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
@@ -110,14 +111,14 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
     if (onRequestStart) {
       onRequestStart();
     }
-  
+
     try {
       const apiUrl = import.meta.env.DEV 
         ? `${API_BASE_URL}/api/ai/chat-stream`
         : '/mrga/api/ai/chat-stream';
-  
+
       console.log('Making AI stream request to:', apiUrl);
-  
+
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
@@ -128,74 +129,95 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
           provider: aiProvider
         })
       });
-  
+
       if (!response.ok) {
         const errorText = await response.text();
         throw new Error(`HTTP error! status: ${response.status}, details: ${errorText}`);
       }
-  
+
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
+      
       let fullResponse = '';
-      let displayedText = '';
-  
-      // 改进的流式显示：模拟逐字显示效果
+      let buffer = '';
+
       while (true) {
         const { done, value } = await reader.read();
         
-        if (done) break;
-  
-        const chunk = decoder.decode(value, { stream: true });
-        fullResponse += chunk;
-        
-        
-        // 每2个字符更新一次，减少更新频率
-        const updateInterval = 2;
-        // 模拟逐字显示，提供更好的用户体验
-        for (let i = displayedText.length; i < fullResponse.length; i += updateInterval) {
-          const endIndex = Math.min(i + updateInterval, fullResponse.length);
-          displayedText = fullResponse.substring(0, endIndex);
-          setStreamingMessage(displayedText);
-          await new Promise(resolve => setTimeout(resolve, 10)); // 减少延迟到5ms
+        if (done) {
+          console.log('Stream completed');
+          break;
         }
-        
-        // 确保最后完全显示
-        if (displayedText.length < fullResponse.length) {
-          displayedText = fullResponse;
-          setStreamingMessage(displayedText);
+
+        // 解码数据
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            try {
+              const dataStr = line.slice(6).trim();
+              if (!dataStr) continue;
+              
+              const data = JSON.parse(dataStr);
+              console.log('Received data:', data);
+
+              if (data.error) {
+                console.error('Stream error:', data.error);
+                throw new Error(data.error);
+              }
+
+              if (data.content) {
+                fullResponse += data.content;
+                console.log('Accumulated content:', fullResponse);
+
+                // 直接更新流式消息，不添加延迟
+                setStreamingMessage(fullResponse);
+              }
+
+              if (data.done) {
+                console.log('Stream transmission ended');
+                
+                // 处理最终结果
+                const responseParts = fullResponse.split('RECOMMENDED_STATIONS:');
+                const aiMessage = responseParts[0].trim();
+                
+                let recommendedStations = [];
+                if (responseParts.length > 1) {
+                  const stationNames = responseParts[1].trim().split(',').map(s => s.trim());
+                  recommendedStations = allStations.filter(station => 
+                    stationNames.some(name => 
+                      station.name.toLowerCase().includes(name.toLowerCase()) || 
+                      name.toLowerCase().includes(station.name.toLowerCase())
+                    )
+                  );
+                }
+
+                setMessages(prev => [...prev, { 
+                  role: 'assistant', 
+                  content: aiMessage,
+                  provider: aiProvider
+                }]);
+                
+                if (recommendedStations.length > 0) {
+                  onStationsRecommended(recommendedStations);
+                }
+                
+                return; // 直接返回，不继续循环
+              }
+            } catch (e) {
+              console.warn('Parse warning:', e, 'Data:', line);
+            }
+          }
         }
       }
-  
-      // 处理最终结果
-      const responseParts = fullResponse.split('RECOMMENDED_STATIONS:');
-      const aiMessage = responseParts[0].trim();
-      
-      let recommendedStations = [];
-      if (responseParts.length > 1) {
-        const stationNames = responseParts[1].trim().split(',').map(s => s.trim());
-        recommendedStations = allStations.filter(station => 
-          stationNames.some(name => 
-            station.name.toLowerCase().includes(name.toLowerCase()) || 
-            name.toLowerCase().includes(station.name.toLowerCase())
-          )
-        );
-      }
-  
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: aiMessage,
-        provider: aiProvider
-      }]);
-      
-      if (recommendedStations.length > 0) {
-        onStationsRecommended(recommendedStations);
-      }
-  
+
     } catch (error) {
       console.error('AI stream request failed:', error);
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: 'Oops! Had a little technical difficulty there. Mind trying again?' 
+        content: `Oops! Had a little technical difficulty there. Error: ${error.message}` 
       }]);
     } finally {
       setIsLoading(false);
@@ -275,15 +297,15 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
         </div>
       )}
 
-      {/* 消息区域 - 只在有内容且展开时显示 */}
+      {/* 消息区域 - 修改消息渲染部分 */}
       {(isExpanded || streamingMessage) && (messages.length > 1 || streamingMessage) && (
         <>
           <div 
             ref={messagesContainerRef}
             className="flex-1 overflow-y-auto p-4 space-y-4"
-            style={{ maxHeight: chatHeight - 140 }} // 为头部和输入区域预留空间
+            style={{ maxHeight: chatHeight - 140 }}
           >
-            {messages.slice(-6).map((message, index) => ( // 显示更多消息
+            {messages.slice(-6).map((message, index) => (
               <div
                 key={index}
                 className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
@@ -295,7 +317,17 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
                       : 'bg-white border-2 border-gray-200 text-gray-800'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  {message.role === 'user' ? (
+                    // 用户消息保持纯文本
+                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  ) : (
+                    // AI 消息使用 Markdown 渲染
+                    <div className="text-sm prose prose-sm max-w-none">
+                      <MarkdownRenderer>
+                        {message.content}
+                      </MarkdownRenderer>
+                    </div>
+                  )}
                   {message.role === 'assistant' && message.provider && (
                     <p className="text-xs text-gray-500 mt-1">
                       via {message.provider === 'openai' ? 'OpenAI' : 'DeepSeek'}
@@ -305,14 +337,16 @@ export default function AIChatInterface({ onStationsRecommended, onRequestStart,
               </div>
             ))}
             
-            {/* 流式消息显示 */}
+            {/* 流式消息显示 - 同样使用 Markdown 渲染 */}
             {streamingMessage && (
               <div className="flex justify-start">
                 <div className="max-w-[80%] rounded-2xl px-4 py-3 bg-white border-2 border-gray-200 text-gray-800">
-                  <p className="text-sm whitespace-pre-wrap">
-                    {streamingMessage}
+                  <div className="text-sm prose prose-sm max-w-none">
+                    <MarkdownRenderer>
+                      {streamingMessage}
+                    </MarkdownRenderer>
                     <span className="inline-block w-2 h-4 bg-purple-500 ml-1 animate-pulse"></span>
-                  </p>
+                  </div>
                   <p className="text-xs text-gray-500 mt-1">
                     via {aiProvider === 'openai' ? 'OpenAI' : 'DeepSeek'} • 正在推荐...
                   </p>

@@ -130,3 +130,85 @@
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+/* Markdown 样式 */
+.prose {
+  color: inherit;
+  line-height: 1.6;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.prose h1 {
+  font-size: 1.25em;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.3em;
+}
+
+.prose h2 {
+  font-size: 1.125em;
+}
+
+.prose h3 {
+  font-size: 1em;
+}
+
+.prose p {
+  margin-bottom: 0.75em;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+
+.prose li {
+  margin-bottom: 0.25em;
+}
+
+.prose blockquote {
+  border-left: 4px solid #c4b5fd;
+  background-color: #f8fafc;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-radius: 0.375rem;
+}
+
+.prose code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875em;
+}
+
+.prose pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.prose a {
+  color: #7c3aed;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #5b21b6;
+}
+
+/* 确保在消息气泡内的 Markdown 样式正确 */
+.bg-white .prose {
+  color: #374151;
+}
+
+.bg-gradient-to-r .prose {
+  color: white;
+}
