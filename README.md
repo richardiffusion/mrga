@@ -149,5 +149,3 @@ The application supports multiple AI providers:
 - Push to the branch
 - Create a Pull Request
 
-![Profile Pic](https://github.com/user-attachments/assets/c6d2fb11-08f1-41bc-b893-9d2e925b7e17)
-
